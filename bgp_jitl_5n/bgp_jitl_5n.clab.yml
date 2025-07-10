@@ -1,0 +1,25 @@
+name: bgp_jitl_5n
+
+topology:
+  nodes:
+    R1:
+      kind: ceos
+      image: ceos:4.34.0F
+    R2:
+      kind: ceos
+      image: ceos:4.34.0F
+    R3:
+      kind: ceos
+      image: ceos:4.34.0F
+    ISP:
+      kind: ceos
+      image: ceos:4.34.0F
+    Internet:
+      kind: ceos
+      image: ceos:4.34.0F  
+  links:
+    - endpoints: ["R1:eth2", "R2:eth1"]
+    - endpoints: ["R1:eth3", "R3:eth1"]  
+    - endpoints: ["R2:eth2", "R3:eth2"]
+    - endpoints: ["R1:eth1", "ISP:eth1"]
+    - endpoints: ["ISP:eth2", "Internet:eth1"]
