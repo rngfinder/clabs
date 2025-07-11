@@ -1,0 +1,249 @@
+{
+  "name": "bgp_jitl_5n",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-8303a7421198",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "mtu": 1500,
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "ISP": {
+      "index": "0",
+      "shortname": "ISP",
+      "longname": "clab-bgp_jitl_5n-ISP",
+      "fqdn": "ISP.bgp_jitl_5n.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/bgp_jitl_5n/clab-bgp_jitl_5n/ISP",
+      "kind": "ceos",
+      "image": "ceos:4.34.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:61:ff:36",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-8303a7421198",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_jitl_5n/clab-bgp_jitl_5n/ISP",
+        "clab-node-longname": "clab-bgp_jitl_5n-ISP",
+        "clab-node-name": "ISP",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/bgp_jitl_5n/bgp_jitl_5n.clab.yml",
+        "containerlab": "bgp_jitl_5n"
+      },
+      "port-bindings": [
+      ]
+    },
+    "Internet": {
+      "index": "1",
+      "shortname": "Internet",
+      "longname": "clab-bgp_jitl_5n-Internet",
+      "fqdn": "Internet.bgp_jitl_5n.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/bgp_jitl_5n/clab-bgp_jitl_5n/Internet",
+      "kind": "ceos",
+      "image": "ceos:4.34.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:66:1f:7e",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-8303a7421198",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_jitl_5n/clab-bgp_jitl_5n/Internet",
+        "clab-node-longname": "clab-bgp_jitl_5n-Internet",
+        "clab-node-name": "Internet",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/bgp_jitl_5n/bgp_jitl_5n.clab.yml",
+        "containerlab": "bgp_jitl_5n"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R1": {
+      "index": "2",
+      "shortname": "R1",
+      "longname": "clab-bgp_jitl_5n-R1",
+      "fqdn": "R1.bgp_jitl_5n.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/bgp_jitl_5n/clab-bgp_jitl_5n/R1",
+      "kind": "ceos",
+      "image": "ceos:4.34.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:6f:ad:56",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-8303a7421198",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_jitl_5n/clab-bgp_jitl_5n/R1",
+        "clab-node-longname": "clab-bgp_jitl_5n-R1",
+        "clab-node-name": "R1",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/bgp_jitl_5n/bgp_jitl_5n.clab.yml",
+        "containerlab": "bgp_jitl_5n"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R2": {
+      "index": "3",
+      "shortname": "R2",
+      "longname": "clab-bgp_jitl_5n-R2",
+      "fqdn": "R2.bgp_jitl_5n.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/bgp_jitl_5n/clab-bgp_jitl_5n/R2",
+      "kind": "ceos",
+      "image": "ceos:4.34.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:4e:76:ce",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-8303a7421198",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_jitl_5n/clab-bgp_jitl_5n/R2",
+        "clab-node-longname": "clab-bgp_jitl_5n-R2",
+        "clab-node-name": "R2",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/bgp_jitl_5n/bgp_jitl_5n.clab.yml",
+        "containerlab": "bgp_jitl_5n"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R3": {
+      "index": "4",
+      "shortname": "R3",
+      "longname": "clab-bgp_jitl_5n-R3",
+      "fqdn": "R3.bgp_jitl_5n.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/bgp_jitl_5n/clab-bgp_jitl_5n/R3",
+      "kind": "ceos",
+      "image": "ceos:4.34.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:0c:28:e9",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-8303a7421198",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_jitl_5n/clab-bgp_jitl_5n/R3",
+        "clab-node-longname": "clab-bgp_jitl_5n-R3",
+        "clab-node-name": "R3",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/bgp_jitl_5n/bgp_jitl_5n.clab.yml",
+        "containerlab": "bgp_jitl_5n"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "R1",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:64:6a:8b",
+        "peer": "z"
+      },
+      "z": {
+        "node": "R2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:8b:b3:d6",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "R1",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:e6:8e:b5",
+        "peer": "z"
+      },
+      "z": {
+        "node": "R3",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:97:05:82",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "R2",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:5a:42:68",
+        "peer": "z"
+      },
+      "z": {
+        "node": "R3",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:75:e1:3c",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "R1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:3b:4b:85",
+        "peer": "z"
+      },
+      "z": {
+        "node": "ISP",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:7c:5d:ac",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "ISP",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:a0:e2:c4",
+        "peer": "z"
+      },
+      "z": {
+        "node": "Internet",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:34:7c:d1",
+        "peer": "a"
+      }
+    }
+  ]
+}
