@@ -1,0 +1,11 @@
+---
+Arista1:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.20.20.2
+Arista2:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.20.20.3
