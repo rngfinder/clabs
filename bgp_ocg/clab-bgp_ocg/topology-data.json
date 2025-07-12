@@ -1,0 +1,100 @@
+{
+  "name": "bgp_ocg",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-a670e134688c",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "mtu": 1500,
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "Arista1": {
+      "index": "0",
+      "shortname": "Arista1",
+      "longname": "clab-bgp_ocg-Arista1",
+      "fqdn": "Arista1.bgp_ocg.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/bgp_ocg/clab-bgp_ocg/Arista1",
+      "kind": "ceos",
+      "image": "ceos:4.34.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:77:9c:23",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a670e134688c",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_ocg/clab-bgp_ocg/Arista1",
+        "clab-node-longname": "clab-bgp_ocg-Arista1",
+        "clab-node-name": "Arista1",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/bgp_ocg/bgp_ocg.clab.yml",
+        "containerlab": "bgp_ocg"
+      },
+      "port-bindings": [
+      ]
+    },
+    "Arista2": {
+      "index": "1",
+      "shortname": "Arista2",
+      "longname": "clab-bgp_ocg-Arista2",
+      "fqdn": "Arista2.bgp_ocg.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/bgp_ocg/clab-bgp_ocg/Arista2",
+      "kind": "ceos",
+      "image": "ceos:4.34.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:c0:f5:78",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a670e134688c",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_ocg/clab-bgp_ocg/Arista2",
+        "clab-node-longname": "clab-bgp_ocg-Arista2",
+        "clab-node-name": "Arista2",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/bgp_ocg/bgp_ocg.clab.yml",
+        "containerlab": "bgp_ocg"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "Arista1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:74:4d:2b",
+        "peer": "z"
+      },
+      "z": {
+        "node": "Arista2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:7a:36:25",
+        "peer": "a"
+      }
+    }
+  ]
+}

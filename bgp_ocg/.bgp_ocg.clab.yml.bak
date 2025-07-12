@@ -1,0 +1,12 @@
+name: bgp_ocg
+topology:
+  nodes:
+    Arista1:
+      kind: ceos
+      image: ceos:4.34.0F
+    Arista2:
+      kind: ceos
+      image: ceos:4.34.0F
+  links:
+    - endpoints: ["Arista1:eth1", "Arista2:eth1"]
+
