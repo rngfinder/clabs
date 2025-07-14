@@ -12,12 +12,12 @@ all:
         ansible_password: admin
       hosts:
         clab-bgp_ocg-Arista1:
-          ansible_host: 172.20.20.5
+          ansible_host: 172.20.20.4
         clab-bgp_ocg-Arista2:
-          ansible_host: 172.20.20.3
+          ansible_host: 172.20.20.5
     linux:
       hosts:
         clab-bgp_ocg-client1:
-          ansible_host: 172.20.20.4
-        clab-bgp_ocg-client2:
           ansible_host: 172.20.20.2
+        clab-bgp_ocg-client2:
+          ansible_host: 172.20.20.3

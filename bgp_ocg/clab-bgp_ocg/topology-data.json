@@ -29,11 +29,11 @@
       "image": "ceos:4.34.0F",
       "mgmt-net": "",
       "mgmt-intf": "Management0",
-      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-address": "172.20.20.3",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "00:1c:73:77:9c:23",
+      "mac-address": "00:1c:73:82:9c:ff",
       "labels": {
         "clab-mgmt-net-bridge": "br-a670e134688c",
         "clab-node-group": "",
@@ -60,11 +60,11 @@
       "image": "ceos:4.34.0F",
       "mgmt-net": "",
       "mgmt-intf": "Management0",
-      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-address": "172.20.20.2",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "00:1c:73:c0:f5:78",
+      "mac-address": "00:1c:73:f5:c0:26",
       "labels": {
         "clab-mgmt-net-bridge": "br-a670e134688c",
         "clab-node-group": "",
@@ -86,13 +86,13 @@
       "a": {
         "node": "Arista1",
         "interface": "eth1",
-        "mac": "aa:c1:ab:74:4d:2b",
+        "mac": "aa:c1:ab:31:1f:fa",
         "peer": "z"
       },
       "z": {
         "node": "Arista2",
         "interface": "eth1",
-        "mac": "aa:c1:ab:7a:36:25",
+        "mac": "aa:c1:ab:bc:f8:88",
         "peer": "a"
       }
     }
