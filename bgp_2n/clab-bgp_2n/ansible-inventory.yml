@@ -12,6 +12,6 @@ all:
         ansible_password: admin
       hosts:
         clab-bgp_2n-Arista1:
-          ansible_host: 172.20.20.2
-        clab-bgp_2n-Arista2:
           ansible_host: 172.20.20.3
+        clab-bgp_2n-Arista2:
+          ansible_host: 172.20.20.2

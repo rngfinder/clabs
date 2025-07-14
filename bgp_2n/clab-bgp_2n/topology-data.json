@@ -6,7 +6,7 @@
       "prefix": "clab",
       "mgmt": {
         "network": "clab",
-        "bridge": "br-0cfa2b9f08c3",
+        "bridge": "br-b94b322c4b53",
         "ipv4-subnet": "172.20.20.0/24",
         "ipv4-gw": "172.20.20.1",
         "ipv6-subnet": "3fff:172:20:20::/64",
@@ -29,13 +29,13 @@
       "image": "ceos:4.34.0F",
       "mgmt-net": "",
       "mgmt-intf": "Management0",
-      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-address": "172.20.20.3",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "00:1c:73:a7:1f:76",
+      "mac-address": "00:1c:73:55:05:20",
       "labels": {
-        "clab-mgmt-net-bridge": "br-0cfa2b9f08c3",
+        "clab-mgmt-net-bridge": "br-b94b322c4b53",
         "clab-node-group": "",
         "clab-node-kind": "ceos",
         "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_2n/clab-bgp_2n/Arista1",
@@ -60,13 +60,13 @@
       "image": "ceos:4.34.0F",
       "mgmt-net": "",
       "mgmt-intf": "Management0",
-      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-address": "172.20.20.2",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "00:1c:73:09:4d:ac",
+      "mac-address": "00:1c:73:cc:4c:98",
       "labels": {
-        "clab-mgmt-net-bridge": "br-0cfa2b9f08c3",
+        "clab-mgmt-net-bridge": "br-b94b322c4b53",
         "clab-node-group": "",
         "clab-node-kind": "ceos",
         "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_2n/clab-bgp_2n/Arista2",
@@ -86,13 +86,13 @@
       "a": {
         "node": "Arista1",
         "interface": "eth1",
-        "mac": "aa:c1:ab:ef:98:d1",
+        "mac": "aa:c1:ab:c1:54:e9",
         "peer": "z"
       },
       "z": {
         "node": "Arista2",
         "interface": "eth1",
-        "mac": "aa:c1:ab:34:13:bf",
+        "mac": "aa:c1:ab:3b:a4:8a",
         "peer": "a"
       }
     }

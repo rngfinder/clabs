@@ -1,0 +1,21 @@
+name: bgp_ocg
+topology:
+  kinds:
+    linux:
+      image: ghcr.io/hellt/network-multitool
+  nodes:
+    Arista1:
+      kind: ceos
+      image: ceos:4.34.0F
+    Arista2:
+      kind: ceos
+      image: ceos:4.34.0F
+    client1:
+      kind: linux
+    client2:
+      kind: linux
+  links:
+    - endpoints: ["Arista1:eth1", "Arista2:eth1"]
+    - endpoints: ["Arista1:eth2", "client1:eth1"]
+    - endpoints: ["Arista2:eth2", "client2:eth1"]
+

@@ -1,5 +1,5 @@
-! Startup-config last modified at Fri Jul 11 14:16:41 2025 by admin
-! device: R1 (cEOSLab, EOS-4.34.0F-41641815.4340F (engineering build))
+! Startup-config last modified at Fri Jul 11 14:34:54 2025 by root
+! device: Arista1 (cEOSLab, EOS-4.34.0F-41641815.4340F (engineering build))
 !
 no aaa root
 !
@@ -36,8 +36,8 @@ interface Loopback0
    ip address 10.10.10.100/32
 !
 interface Management0
-   ip address 172.20.20.2/24
-   ipv6 address 3fff:172:20:20::2/64
+   ip address 172.20.20.3/24
+   ipv6 address 3fff:172:20:20::3/64
 !
 no ip routing
 !
