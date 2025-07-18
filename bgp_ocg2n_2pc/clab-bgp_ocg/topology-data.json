@@ -6,7 +6,7 @@
       "prefix": "clab",
       "mgmt": {
         "network": "clab",
-        "bridge": "br-770aaeb8cd86",
+        "bridge": "br-4dec753f406e",
         "ipv4-subnet": "172.20.20.0/24",
         "ipv4-gw": "172.20.20.1",
         "ipv6-subnet": "3fff:172:20:20::/64",
@@ -29,13 +29,13 @@
       "image": "ceos:4.34.0F",
       "mgmt-net": "",
       "mgmt-intf": "Management0",
-      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-address": "172.20.20.4",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "00:1c:73:4a:20:f2",
+      "mac-address": "00:1c:73:21:35:3d",
       "labels": {
-        "clab-mgmt-net-bridge": "br-770aaeb8cd86",
+        "clab-mgmt-net-bridge": "br-4dec753f406e",
         "clab-node-group": "",
         "clab-node-kind": "ceos",
         "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_ocg2n_2pc/clab-bgp_ocg/Arista1",
@@ -60,13 +60,13 @@
       "image": "ceos:4.34.0F",
       "mgmt-net": "",
       "mgmt-intf": "Management0",
-      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-address": "172.20.20.5",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "00:1c:73:8a:46:1e",
+      "mac-address": "00:1c:73:db:8e:fe",
       "labels": {
-        "clab-mgmt-net-bridge": "br-770aaeb8cd86",
+        "clab-mgmt-net-bridge": "br-4dec753f406e",
         "clab-node-group": "",
         "clab-node-kind": "ceos",
         "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_ocg2n_2pc/clab-bgp_ocg/Arista2",
@@ -91,13 +91,13 @@
       "image": "ghcr.io/hellt/network-multitool",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-address": "172.20.20.2",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-770aaeb8cd86",
+        "clab-mgmt-net-bridge": "br-4dec753f406e",
         "clab-node-group": "",
         "clab-node-kind": "linux",
         "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_ocg2n_2pc/clab-bgp_ocg/client1",
@@ -134,13 +134,13 @@
       "image": "ghcr.io/hellt/network-multitool",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-address": "172.20.20.3",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-770aaeb8cd86",
+        "clab-mgmt-net-bridge": "br-4dec753f406e",
         "clab-node-group": "",
         "clab-node-kind": "linux",
         "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_ocg2n_2pc/clab-bgp_ocg/client2",
@@ -155,13 +155,13 @@
         {
           "host-ip": "",
           "host-port": 0,
-          "port": 443,
+          "port": 80,
           "protocol": "tcp"
         },
         {
           "host-ip": "",
           "host-port": 0,
-          "port": 80,
+          "port": 443,
           "protocol": "tcp"
         }
       ]
@@ -172,13 +172,13 @@
       "a": {
         "node": "Arista1",
         "interface": "eth1",
-        "mac": "aa:c1:ab:ce:22:1d",
+        "mac": "aa:c1:ab:c5:b6:bb",
         "peer": "z"
       },
       "z": {
         "node": "Arista2",
         "interface": "eth1",
-        "mac": "aa:c1:ab:f8:64:86",
+        "mac": "aa:c1:ab:0d:d0:b7",
         "peer": "a"
       }
     },
@@ -186,13 +186,13 @@
       "a": {
         "node": "Arista1",
         "interface": "eth2",
-        "mac": "aa:c1:ab:73:92:b8",
+        "mac": "aa:c1:ab:05:60:1b",
         "peer": "z"
       },
       "z": {
         "node": "client1",
         "interface": "eth1",
-        "mac": "aa:c1:ab:e2:bc:58",
+        "mac": "aa:c1:ab:02:ef:3a",
         "peer": "a"
       }
     },
@@ -200,13 +200,13 @@
       "a": {
         "node": "Arista2",
         "interface": "eth2",
-        "mac": "aa:c1:ab:34:83:70",
+        "mac": "aa:c1:ab:80:64:4c",
         "peer": "z"
       },
       "z": {
         "node": "client2",
         "interface": "eth1",
-        "mac": "aa:c1:ab:90:da:f5",
+        "mac": "aa:c1:ab:fc:4b:4a",
         "peer": "a"
       }
     }

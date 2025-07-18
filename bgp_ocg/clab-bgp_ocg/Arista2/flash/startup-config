@@ -1,9 +1,9 @@
-! Startup-config last modified at Sat Jul 12 14:40:36 2025 by admin
+! Startup-config last modified at Sun Jul 13 18:24:52 2025 by admin
 ! device: R2 (cEOSLab, EOS-4.34.0F-41641815.4340F (engineering build))
 !
 no aaa root
 !
-username admin privilege 15 role network-admin secret sha512 $6$XzfIFo49Set5uRGJ$okBeRxRpJ0MWl7K1apq0UZ.dAxFXIUmLuWaH84zri3CfpX7KjsVSwKdD.VGKd90Jhw4xzwF4/lo8m1Hd2B0tu0
+username admin privilege 15 role network-admin secret sha512 $6$tTEAExsAFg4b5IR5$Y1M0G1iSlSHocew9fRZoE7d4N.4WfJ.GB461oi1E5m6fSoJREhQ0mjA/.QT9Ehax9rCzf5TwW6JbD3wW2OqIZ/
 !
 management api http-commands
    no shutdown
@@ -29,16 +29,28 @@ management api netconf
    transport ssh default
 !
 interface Ethernet1
+   no switchport
+   ip address 10.12.1.2/30
+!
+interface Loopback0
+   ip address 192.168.2.2/32
 !
 interface Management0
-   ip address 172.20.20.3/24
-   ipv6 address 3fff:172:20:20::3/64
+   ip address 172.20.20.2/24
+   ipv6 address 3fff:172:20:20::2/64
 !
-no ip routing
+ip routing
 !
 ip route 0.0.0.0/0 172.20.20.1
 !
 ipv6 route ::/0 3fff:172:20:20::1
+!
+router bgp 65200
+   neighbor 10.12.1.2 remote-as 65100
+   !
+   address-family ipv4
+      neighbor 10.12.1.2 activate
+      network 10.2.0.0/24
 !
 router multicast
    ipv4
