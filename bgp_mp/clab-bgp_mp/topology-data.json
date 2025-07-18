@@ -1,0 +1,463 @@
+{
+  "name": "bgp_mp",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-03f9ec5cd1c7",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "mtu": 1500,
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "R1": {
+      "index": "0",
+      "shortname": "R1",
+      "longname": "clab-bgp_mp-R1",
+      "fqdn": "R1.bgp_mp.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/bgp_mp/clab-bgp_mp/R1",
+      "kind": "ceos",
+      "image": "ceos:4.34.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:ee:8f:06",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-03f9ec5cd1c7",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_mp/clab-bgp_mp/R1",
+        "clab-node-longname": "clab-bgp_mp-R1",
+        "clab-node-name": "R1",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/bgp_mp/bgp_mp.clab.yml",
+        "containerlab": "bgp_mp"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R2": {
+      "index": "1",
+      "shortname": "R2",
+      "longname": "clab-bgp_mp-R2",
+      "fqdn": "R2.bgp_mp.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/bgp_mp/clab-bgp_mp/R2",
+      "kind": "ceos",
+      "image": "ceos:4.34.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:bc:49:ec",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-03f9ec5cd1c7",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_mp/clab-bgp_mp/R2",
+        "clab-node-longname": "clab-bgp_mp-R2",
+        "clab-node-name": "R2",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/bgp_mp/bgp_mp.clab.yml",
+        "containerlab": "bgp_mp"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R3": {
+      "index": "2",
+      "shortname": "R3",
+      "longname": "clab-bgp_mp-R3",
+      "fqdn": "R3.bgp_mp.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/bgp_mp/clab-bgp_mp/R3",
+      "kind": "ceos",
+      "image": "ceos:4.34.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.8",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::8",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:fd:92:92",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-03f9ec5cd1c7",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_mp/clab-bgp_mp/R3",
+        "clab-node-longname": "clab-bgp_mp-R3",
+        "clab-node-name": "R3",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/bgp_mp/bgp_mp.clab.yml",
+        "containerlab": "bgp_mp"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R4": {
+      "index": "3",
+      "shortname": "R4",
+      "longname": "clab-bgp_mp-R4",
+      "fqdn": "R4.bgp_mp.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/bgp_mp/clab-bgp_mp/R4",
+      "kind": "ceos",
+      "image": "ceos:4.34.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.9",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::9",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:f2:ac:7c",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-03f9ec5cd1c7",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_mp/clab-bgp_mp/R4",
+        "clab-node-longname": "clab-bgp_mp-R4",
+        "clab-node-name": "R4",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/bgp_mp/bgp_mp.clab.yml",
+        "containerlab": "bgp_mp"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R5": {
+      "index": "4",
+      "shortname": "R5",
+      "longname": "clab-bgp_mp-R5",
+      "fqdn": "R5.bgp_mp.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/bgp_mp/clab-bgp_mp/R5",
+      "kind": "ceos",
+      "image": "ceos:4.34.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:ba:be:1e",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-03f9ec5cd1c7",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_mp/clab-bgp_mp/R5",
+        "clab-node-longname": "clab-bgp_mp-R5",
+        "clab-node-name": "R5",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/bgp_mp/bgp_mp.clab.yml",
+        "containerlab": "bgp_mp"
+      },
+      "port-bindings": [
+      ]
+    },
+    "client2": {
+      "index": "5",
+      "shortname": "client2",
+      "longname": "clab-bgp_mp-client2",
+      "fqdn": "client2.bgp_mp.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/bgp_mp/clab-bgp_mp/client2",
+      "kind": "linux",
+      "image": "ghcr.io/hellt/network-multitool",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.7",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::7",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-03f9ec5cd1c7",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_mp/clab-bgp_mp/client2",
+        "clab-node-longname": "clab-bgp_mp-client2",
+        "clab-node-name": "client2",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/bgp_mp/bgp_mp.clab.yml",
+        "containerlab": "bgp_mp"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "client3": {
+      "index": "6",
+      "shortname": "client3",
+      "longname": "clab-bgp_mp-client3",
+      "fqdn": "client3.bgp_mp.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/bgp_mp/clab-bgp_mp/client3",
+      "kind": "linux",
+      "image": "ghcr.io/hellt/network-multitool",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-03f9ec5cd1c7",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_mp/clab-bgp_mp/client3",
+        "clab-node-longname": "clab-bgp_mp-client3",
+        "clab-node-name": "client3",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/bgp_mp/bgp_mp.clab.yml",
+        "containerlab": "bgp_mp"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "client4": {
+      "index": "7",
+      "shortname": "client4",
+      "longname": "clab-bgp_mp-client4",
+      "fqdn": "client4.bgp_mp.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/bgp_mp/clab-bgp_mp/client4",
+      "kind": "linux",
+      "image": "ghcr.io/hellt/network-multitool",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.10",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::a",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-03f9ec5cd1c7",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_mp/clab-bgp_mp/client4",
+        "clab-node-longname": "clab-bgp_mp-client4",
+        "clab-node-name": "client4",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/bgp_mp/bgp_mp.clab.yml",
+        "containerlab": "bgp_mp"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "client5": {
+      "index": "8",
+      "shortname": "client5",
+      "longname": "clab-bgp_mp-client5",
+      "fqdn": "client5.bgp_mp.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/bgp_mp/clab-bgp_mp/client5",
+      "kind": "linux",
+      "image": "ghcr.io/hellt/network-multitool",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-03f9ec5cd1c7",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_mp/clab-bgp_mp/client5",
+        "clab-node-longname": "clab-bgp_mp-client5",
+        "clab-node-name": "client5",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/bgp_mp/bgp_mp.clab.yml",
+        "containerlab": "bgp_mp"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "R1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:57:00:44",
+        "peer": "z"
+      },
+      "z": {
+        "node": "R2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:f7:41:1c",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "R1",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:9f:8e:50",
+        "peer": "z"
+      },
+      "z": {
+        "node": "R3",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:fe:02:10",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "R1",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:45:2e:90",
+        "peer": "z"
+      },
+      "z": {
+        "node": "R4",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:fc:8a:98",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "R1",
+        "interface": "eth5",
+        "mac": "aa:c1:ab:17:ee:31",
+        "peer": "z"
+      },
+      "z": {
+        "node": "R5",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:cc:ad:5d",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "client2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:6a:b4:e8",
+        "peer": "z"
+      },
+      "z": {
+        "node": "R2",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:ab:9f:42",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "client3",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:b6:9e:dc",
+        "peer": "z"
+      },
+      "z": {
+        "node": "R3",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:86:c3:56",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "client4",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:6e:fb:c2",
+        "peer": "z"
+      },
+      "z": {
+        "node": "R4",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:db:42:9b",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "client5",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:96:57:77",
+        "peer": "z"
+      },
+      "z": {
+        "node": "R5",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:e6:be:3d",
+        "peer": "a"
+      }
+    }
+  ]
+}

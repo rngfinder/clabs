@@ -1,0 +1,46 @@
+---
+R1:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.20.20.5
+R2:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.20.20.6
+R3:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.20.20.8
+R4:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.20.20.9
+R5:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.20.20.3
+client2:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.7
+client3:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.2
+client4:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.10
+client5:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.4

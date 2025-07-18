@@ -1,0 +1,41 @@
+name: bgp_mp
+topology:
+  kinds:
+    linux:
+      image: ghcr.io/hellt/network-multitool
+  nodes:
+    R1:
+      kind: ceos
+      image: ceos:4.34.0F
+    R2:
+      kind: ceos
+      image: ceos:4.34.0F
+    R3:
+      kind: ceos
+      image: ceos:4.34.0F
+    R4:
+      kind: ceos
+      image: ceos:4.34.0F
+    R5:
+      kind: ceos
+      image: ceos:4.34.0F 
+    client2:
+      kind: linux
+    client3:
+      kind: linux
+    client4:
+      kind: linux
+    client5:
+      kind: linux
+  links:
+    - endpoints: ["R1:eth1", "R2:eth1"]
+    - endpoints: ["R1:eth3", "R3:eth1"]  
+    - endpoints: ["R1:eth4", "R4:eth1"]
+    - endpoints: ["R1:eth5", "R5:eth1"]
+    - endpoints: ["client2:eth1", "R2:eth2"]
+    - endpoints: ["client3:eth1", "R3:eth2"]
+    - endpoints: ["client4:eth1", "R4:eth2"]
+    - endpoints: ["client5:eth1", "R5:eth2"]
+
+
+
