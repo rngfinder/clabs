@@ -6,12 +6,11 @@
       "prefix": "clab",
       "mgmt": {
         "network": "clab",
-        "bridge": "br-e66d4fcd9f78",
+        "bridge": "br-95926c627d7b",
         "ipv4-subnet": "172.20.20.0/24",
         "ipv4-gw": "172.20.20.1",
         "ipv6-subnet": "3fff:172:20:20::/64",
         "ipv6-gw": "3fff:172:20:20::1",
-        "mtu": 1500,
         "external-access": true
       }
     }
@@ -29,13 +28,13 @@
       "image": "ghcr.io/nokia/srlinux",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.7",
+      "mgmt-ipv4-address": "172.20.20.3",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::7",
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "1a:66:00:00:00:00",
+      "mac-address": "1a:7b:00:00:00:00",
       "labels": {
-        "clab-mgmt-net-bridge": "br-e66d4fcd9f78",
+        "clab-mgmt-net-bridge": "br-95926c627d7b",
         "clab-node-group": "",
         "clab-node-kind": "nokia_srlinux",
         "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_jitl_5n/clab-srl01/srl1",
@@ -44,13 +43,7 @@
         "clab-node-type": "ixrd3",
         "clab-owner": "sysadmin",
         "clab-topo-file": "/home/sysadmin/_repos/clabs/bgp_jitl_5n/example.clab.yml",
-        "containerlab": "srl01",
-        "graph-geoCoordinateLat": "48.728241926604817",
-        "graph-geoCoordinateLng": "9.562194519969340",
-        "graph-groupLabelPos": "bottom-center",
-        "graph-icon": "router",
-        "graph-posX": "7",
-        "graph-posY": "7"
+        "containerlab": "srl01"
       },
       "port-bindings": [
       ]
@@ -66,13 +59,13 @@
       "image": "ghcr.io/nokia/srlinux",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.8",
+      "mgmt-ipv4-address": "172.20.20.2",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::8",
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "1a:8b:01:00:00:00",
+      "mac-address": "1a:b9:01:00:00:00",
       "labels": {
-        "clab-mgmt-net-bridge": "br-e66d4fcd9f78",
+        "clab-mgmt-net-bridge": "br-95926c627d7b",
         "clab-node-group": "",
         "clab-node-kind": "nokia_srlinux",
         "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/bgp_jitl_5n/clab-srl01/srl2",
@@ -81,13 +74,7 @@
         "clab-node-type": "ixrd3",
         "clab-owner": "sysadmin",
         "clab-topo-file": "/home/sysadmin/_repos/clabs/bgp_jitl_5n/example.clab.yml",
-        "containerlab": "srl01",
-        "graph-geoCoordinateLat": "49.456206628910913",
-        "graph-geoCoordinateLng": "9.133108138242559",
-        "graph-groupLabelPos": "bottom-center",
-        "graph-icon": "router",
-        "graph-posX": "7",
-        "graph-posY": "7"
+        "containerlab": "srl01"
       },
       "port-bindings": [
       ]
@@ -95,17 +82,19 @@
   },
   "links": [
     {
-      "a": {
-        "node": "srl1",
-        "interface": "e1-1",
-        "mac": "aa:c1:ab:9f:c9:c4",
-        "peer": "z"
-      },
-      "z": {
-        "node": "srl2",
-        "interface": "e1-1",
-        "mac": "aa:c1:ab:67:77:3e",
-        "peer": "a"
+      "endpoints": {
+        "a": {
+          "node": "srl1",
+          "interface": "e1-1",
+          "mac": "aa:c1:ab:e0:69:d2",
+          "peer": "z"
+        },
+        "z": {
+          "node": "srl2",
+          "interface": "e1-1",
+          "mac": "aa:c1:ab:5f:9e:a4",
+          "peer": "a"
+        }
       }
     }
   ]

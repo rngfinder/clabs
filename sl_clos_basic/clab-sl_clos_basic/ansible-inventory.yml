@@ -12,26 +12,26 @@ all:
         ansible_password: admin
       hosts:
         clab-sl_clos_basic-ISP:
-          ansible_host: 172.20.20.5
-        clab-sl_clos_basic-R11:
-          ansible_host: 172.20.20.2
-        clab-sl_clos_basic-leaf1:
-          ansible_host: 172.20.20.7
-        clab-sl_clos_basic-leaf2:
-          ansible_host: 172.20.20.11
-        clab-sl_clos_basic-leaf3:
-          ansible_host: 172.20.20.8
-        clab-sl_clos_basic-spine1:
           ansible_host: 172.20.20.10
+        clab-sl_clos_basic-R11:
+          ansible_host: 172.20.20.11
+        clab-sl_clos_basic-leaf1:
+          ansible_host: 172.20.20.12
+        clab-sl_clos_basic-leaf2:
+          ansible_host: 172.20.20.3
+        clab-sl_clos_basic-leaf3:
+          ansible_host: 172.20.20.4
+        clab-sl_clos_basic-spine1:
+          ansible_host: 172.20.20.5
         clab-sl_clos_basic-spine2:
-          ansible_host: 172.20.20.9
+          ansible_host: 172.20.20.6
     linux:
       hosts:
         clab-sl_clos_basic-pc1:
-          ansible_host: 172.20.20.3
+          ansible_host: 172.20.20.7
         clab-sl_clos_basic-pc2:
-          ansible_host: 172.20.20.6
+          ansible_host: 172.20.20.2
         clab-sl_clos_basic-pc3:
-          ansible_host: 172.20.20.12
+          ansible_host: 172.20.20.8
         clab-sl_clos_basic-pc4:
-          ansible_host: 172.20.20.4
+          ansible_host: 172.20.20.9

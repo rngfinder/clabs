@@ -3,9 +3,9 @@ srl1:
     username: admin
     password: NokiaSrl1!
     platform: nokia_srlinux
-    hostname: 172.20.20.7
+    hostname: 172.20.20.3
 srl2:
     username: admin
     password: NokiaSrl1!
     platform: nokia_srlinux
-    hostname: 172.20.20.8
+    hostname: 172.20.20.2

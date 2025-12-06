@@ -15,6 +15,6 @@ all:
         ansible_password: NokiaSrl1!
       hosts:
         clab-srl01-srl1:
-          ansible_host: 172.20.20.7
+          ansible_host: 172.20.20.3
         clab-srl01-srl2:
-          ansible_host: 172.20.20.8
+          ansible_host: 172.20.20.2
