@@ -1,0 +1,100 @@
+{
+  "name": "basic_alpine_lab",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-34d1e611febe",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "mtu": 1500,
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "alpine1": {
+      "index": "0",
+      "shortname": "alpine1",
+      "longname": "clab-basic_alpine_lab-alpine1",
+      "fqdn": "alpine1.basic_alpine_lab.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/basic_alpine_lab/clab-basic_alpine_lab/alpine1",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-34d1e611febe",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/basic_alpine_lab/clab-basic_alpine_lab/alpine1",
+        "clab-node-longname": "clab-basic_alpine_lab-alpine1",
+        "clab-node-name": "alpine1",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/basic_alpine_lab/basic_alpine_lab.clab.yml",
+        "containerlab": "basic_alpine_lab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "alpine2": {
+      "index": "1",
+      "shortname": "alpine2",
+      "longname": "clab-basic_alpine_lab-alpine2",
+      "fqdn": "alpine2.basic_alpine_lab.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/basic_alpine_lab/clab-basic_alpine_lab/alpine2",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-34d1e611febe",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/basic_alpine_lab/clab-basic_alpine_lab/alpine2",
+        "clab-node-longname": "clab-basic_alpine_lab-alpine2",
+        "clab-node-name": "alpine2",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/basic_alpine_lab/basic_alpine_lab.clab.yml",
+        "containerlab": "basic_alpine_lab"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "alpine1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:a5:b2:96",
+        "peer": "z"
+      },
+      "z": {
+        "node": "alpine2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:7e:f1:c9",
+        "peer": "a"
+      }
+    }
+  ]
+}

@@ -5,21 +5,56 @@ topology:
     R1:
       kind: ceos
       image: ceos:4.34.0F
+      labels:
+        graph-posX: "-35"
+        graph-posY: "-7"
+        graph-geoCoordinateLat: "48.685277372448247"
+        graph-geoCoordinateLng: "9.727841431907011"
+        graph-icon: router
+        graph-groupLabelPos: bottom-center
     R2:
       kind: ceos
       image: ceos:4.34.0F
+      labels:
+        graph-posX: "-91"
+        graph-posY: "-49"
+        graph-geoCoordinateLat: "49.146689259400851"
+        graph-geoCoordinateLng: "9.041098700312538"
+        graph-icon: router
+        graph-groupLabelPos: bottom-center
     R3:
       kind: ceos
       image: ceos:4.34.0F
+      labels:
+        graph-posX: "-91"
+        graph-posY: "35"
+        graph-geoCoordinateLat: "48.778375211168779"
+        graph-geoCoordinateLng: "9.871713882311587"
+        graph-icon: router
+        graph-groupLabelPos: bottom-center
     ISP:
       kind: ceos
       image: ceos:4.34.0F
+      labels:
+        graph-posX: "35"
+        graph-posY: "-7"
+        graph-geoCoordinateLat: "48.741735316654044"
+        graph-geoCoordinateLng: "9.377253226184809"
+        graph-icon: router
+        graph-groupLabelPos: bottom-center
     Internet:
       kind: ceos
-      image: ceos:4.34.0F  
+      image: ceos:4.34.0F
+      labels:
+        graph-posX: "105"
+        graph-posY: "-7"
+        graph-geoCoordinateLat: "49.019303196467433"
+        graph-geoCoordinateLng: "9.248653738373172"
+        graph-icon: router
+        graph-groupLabelPos: bottom-center
   links:
-    - endpoints: ["R1:eth2", "R2:eth1"]
-    - endpoints: ["R1:eth3", "R3:eth1"]  
-    - endpoints: ["R2:eth2", "R3:eth2"]
-    - endpoints: ["R1:eth1", "ISP:eth1"]
-    - endpoints: ["ISP:eth2", "Internet:eth1"]
+    - endpoints: [ R1:eth2, R2:eth1 ]
+    - endpoints: [ R1:eth3, R3:eth1 ]
+    - endpoints: [ R2:eth2, R3:eth2 ]
+    - endpoints: [ R1:eth1, ISP:eth1 ]
+    - endpoints: [ ISP:eth2, Internet:eth1 ]

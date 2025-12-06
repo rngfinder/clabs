@@ -1,0 +1,13 @@
+name: basic_alpine_lab
+
+topology:
+  nodes:
+    alpine1:
+      kind: linux
+      image: alpine:latest
+    alpine2:
+      kind: linux
+      image: alpine:latest
+
+  links:
+        - endpoints: ["alpine1:eth1", "alpine2:eth1"]

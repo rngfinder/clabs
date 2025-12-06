@@ -1,0 +1,61 @@
+# topology 
+name: sl_clos_basic
+
+topology:
+  kinds:
+    nokia_srlinux:
+      image: ghcr.io/nokia/srlinux:latest
+    arista_ceos:
+      image: ceos:4.34.0F
+    alpine_linux:
+      image: alpine:latest
+  nodes:
+    spine1:
+      kind: nokia_srlinux
+    spine2:
+      kind: nokia_srlinux
+    leaf1:
+      kind: arista_ceos
+    leaf2:
+      kind: arista_ceos    
+    leaf3:
+      kind: arista_ceos
+    R11:
+      kind: nokia_srlinux
+    ISP:
+      kind: nokia_srlinux    
+
+    pc1:
+      kind: alpine_linux  
+    pc2:
+      kind: alpine_linux    
+    pc3:
+      kind: alpine_linux  
+    pc4:
+      kind: alpine_linux    
+
+links:
+    # spine to leaf links
+    # l1
+    - endpoints: ["spine1:e0/1", "leaf1:e0/1"]
+    - endpoints: ["spine1:e0/2", "leaf2:e0/1"]
+    - endpoints: ["spine2:e0/3", "leaf3:e0/1"]
+    # l2
+    - endpoints: ["spine1:e0/1", "leaf1:e0/2"]
+    - endpoints: ["spine1:e0/2", "leaf2:e0/2"]
+    - endpoints: ["spine2:e0/1", "leaf3:e0/2"]
+    
+    # spine to R11
+    - endpoints: ["spine1:e0/4", "R11:e0/1"]
+    - endpoints: ["spine2:e0/4", "R11:e0/2"]
+    # R11 to ISP
+    - endpoints: ["R11:e0/3", "ISP:e0/1"]
+    - endpoints: ["R11:e0/4", "ISP:e0/2"]
+
+    # host connection links
+    - endpoints: ["pc1:eth1", "leaf1:e0/3"]
+    - endpoints: ["pc2:eth1", "leaf2:e0/3"]
+    - endpoints: ["pc3:eth1", "leaf3:e0/3"]
+    - endpoints: ["pc4:eth1", "leaf3:e0/4"]
+
+ 

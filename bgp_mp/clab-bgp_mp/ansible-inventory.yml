@@ -12,11 +12,11 @@ all:
         ansible_password: admin
       hosts:
         clab-bgp_mp-R1:
-          ansible_host: 172.20.20.5
+          ansible_host: 172.20.20.2
         clab-bgp_mp-R2:
-          ansible_host: 172.20.20.6
+          ansible_host: 172.20.20.5
         clab-bgp_mp-R3:
-          ansible_host: 172.20.20.8
+          ansible_host: 172.20.20.4
         clab-bgp_mp-R4:
           ansible_host: 172.20.20.9
         clab-bgp_mp-R5:
@@ -24,10 +24,10 @@ all:
     linux:
       hosts:
         clab-bgp_mp-client2:
-          ansible_host: 172.20.20.7
+          ansible_host: 172.20.20.6
         clab-bgp_mp-client3:
-          ansible_host: 172.20.20.2
+          ansible_host: 172.20.20.7
         clab-bgp_mp-client4:
           ansible_host: 172.20.20.10
         clab-bgp_mp-client5:
-          ansible_host: 172.20.20.4
+          ansible_host: 172.20.20.8

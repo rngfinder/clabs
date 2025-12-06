@@ -1,0 +1,15 @@
+{
+  "freeTextAnnotations": [],
+  "groupStyleAnnotations": [
+    {
+      "id": "groupName6:1",
+      "backgroundColor": "#d9d9d9",
+      "backgroundOpacity": 20,
+      "borderColor": "#dddddd",
+      "borderWidth": 0.5,
+      "borderStyle": "solid",
+      "borderRadius": 0,
+      "color": "#ebecf0"
+    }
+  ]
+}
