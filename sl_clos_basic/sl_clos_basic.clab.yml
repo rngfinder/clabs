@@ -3,17 +3,15 @@ name: sl_clos_basic
 
 topology:
   kinds:
-    nokia_srlinux:
-      image: ghcr.io/nokia/srlinux:latest
     arista_ceos:
       image: ceos:4.34.0F
-    alpine_linux:
+    linux:
       image: alpine:latest
   nodes:
     spine1:
-      kind: nokia_srlinux
+      kind: arista_ceos
     spine2:
-      kind: nokia_srlinux
+      kind: arista_ceos
     leaf1:
       kind: arista_ceos
     leaf2:
@@ -21,41 +19,39 @@ topology:
     leaf3:
       kind: arista_ceos
     R11:
-      kind: nokia_srlinux
+      kind: arista_ceos
     ISP:
-      kind: nokia_srlinux    
+      kind: arista_ceos
 
     pc1:
-      kind: alpine_linux  
+      kind: linux  
     pc2:
-      kind: alpine_linux    
+      kind: linux    
     pc3:
-      kind: alpine_linux  
+      kind: linux  
     pc4:
-      kind: alpine_linux    
+      kind: linux    
 
-links:
-    # spine to leaf links
-    # l1
-    - endpoints: ["spine1:e0/1", "leaf1:e0/1"]
-    - endpoints: ["spine1:e0/2", "leaf2:e0/1"]
-    - endpoints: ["spine2:e0/3", "leaf3:e0/1"]
-    # l2
-    - endpoints: ["spine1:e0/1", "leaf1:e0/2"]
-    - endpoints: ["spine1:e0/2", "leaf2:e0/2"]
-    - endpoints: ["spine2:e0/1", "leaf3:e0/2"]
+  links:
+    #l1 to spine links
+    - endpoints: ["spine1:eth1", "leaf1:eth1"]
+    - endpoints: ["spine1:eth2", "leaf2:eth1"]
+    - endpoints: ["spine1:eth3", "leaf3:eth1"]
+
+    # l2 to spinr links
+    - endpoints: ["spine2:eth1", "leaf1:eth2"]
+    - endpoints: ["spine2:eth2", "leaf2:eth2"]
+    - endpoints: ["spine2:eth3", "leaf3:eth2"]
     
-    # spine to R11
-    - endpoints: ["spine1:e0/4", "R11:e0/1"]
-    - endpoints: ["spine2:e0/4", "R11:e0/2"]
-    # R11 to ISP
-    - endpoints: ["R11:e0/3", "ISP:e0/1"]
-    - endpoints: ["R11:e0/4", "ISP:e0/2"]
+    # spine to R11 links
+    - endpoints: ["spine1:eth4", "R11:eth1"]
+    - endpoints: ["spine2:eth4", "R11:eth2"]
+     #R11 to ISP
+    - endpoints: ["R11:eth3", "ISP:eth1"]
+    - endpoints: ["R11:eth4", "ISP:eth2"]
 
     # host connection links
-    - endpoints: ["pc1:eth1", "leaf1:e0/3"]
-    - endpoints: ["pc2:eth1", "leaf2:e0/3"]
-    - endpoints: ["pc3:eth1", "leaf3:e0/3"]
-    - endpoints: ["pc4:eth1", "leaf3:e0/4"]
-
- 
+    - endpoints: ["pc1:eth1", "leaf1:eth3"]
+    - endpoints: ["pc2:eth1", "leaf2:eth3"]
+    - endpoints: ["pc3:eth1", "leaf3:eth3"]
+    - endpoints: ["pc4:eth1", "leaf3:eth4"]

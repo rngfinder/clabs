@@ -3,12 +3,12 @@ ISP:
     username: admin
     password: admin
     platform: ceos
-    hostname: 172.20.20.3
+    hostname: 172.20.20.2
 Internet:
     username: admin
     password: admin
     platform: ceos
-    hostname: 172.20.20.4
+    hostname: 172.20.20.3
 R1:
     username: admin
     password: admin
@@ -18,7 +18,7 @@ R2:
     username: admin
     password: admin
     platform: ceos
-    hostname: 172.20.20.2
+    hostname: 172.20.20.4
 R3:
     username: admin
     password: admin

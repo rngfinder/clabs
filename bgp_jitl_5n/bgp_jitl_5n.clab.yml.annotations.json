@@ -11,5 +11,68 @@
       "borderRadius": 0,
       "color": "#ebecf0"
     }
-  ]
+  ],
+  "nodeAnnotations": [
+    {
+      "id": "R1",
+      "icon": "router",
+      "position": {
+        "x": -35,
+        "y": -7
+      },
+      "geoCoordinates": {
+        "lat": 48.68527737244825,
+        "lng": 9.727841431907011
+      }
+    },
+    {
+      "id": "R2",
+      "icon": "router",
+      "position": {
+        "x": -91,
+        "y": -49
+      },
+      "geoCoordinates": {
+        "lat": 49.14668925940085,
+        "lng": 9.041098700312538
+      }
+    },
+    {
+      "id": "R3",
+      "icon": "router",
+      "position": {
+        "x": -91,
+        "y": 35
+      },
+      "geoCoordinates": {
+        "lat": 48.77837521116878,
+        "lng": 9.871713882311587
+      }
+    },
+    {
+      "id": "ISP",
+      "icon": "router",
+      "position": {
+        "x": 35,
+        "y": -7
+      },
+      "geoCoordinates": {
+        "lat": 48.741735316654044,
+        "lng": 9.37725322618481
+      }
+    },
+    {
+      "id": "Internet",
+      "icon": "router",
+      "position": {
+        "x": 105,
+        "y": -7
+      },
+      "geoCoordinates": {
+        "lat": 49.01930319646743,
+        "lng": 9.248653738373172
+      }
+    }
+  ],
+  "cloudNodeAnnotations": []
 }

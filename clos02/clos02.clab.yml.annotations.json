@@ -1,0 +1,177 @@
+{
+  "freeTextAnnotations": [],
+  "freeShapeAnnotations": [],
+  "groupStyleAnnotations": [],
+  "cloudNodeAnnotations": [],
+  "nodeAnnotations": [
+    {
+      "id": "leaf1",
+      "icon": "router",
+      "position": {
+        "x": 105,
+        "y": 105
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      }
+    },
+    {
+      "id": "leaf2",
+      "icon": "router",
+      "position": {
+        "x": 203,
+        "y": 105
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      }
+    },
+    {
+      "id": "leaf3",
+      "icon": "router",
+      "position": {
+        "x": 301,
+        "y": 105
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      }
+    },
+    {
+      "id": "leaf4",
+      "icon": "router",
+      "position": {
+        "x": 399,
+        "y": 105
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      }
+    },
+    {
+      "id": "spine1",
+      "icon": "router",
+      "position": {
+        "x": 105,
+        "y": 203
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      }
+    },
+    {
+      "id": "spine2",
+      "icon": "router",
+      "position": {
+        "x": 203,
+        "y": 203
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      }
+    },
+    {
+      "id": "spine3",
+      "icon": "router",
+      "position": {
+        "x": 301,
+        "y": 203
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      }
+    },
+    {
+      "id": "spine4",
+      "icon": "router",
+      "position": {
+        "x": 399,
+        "y": 203
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      }
+    },
+    {
+      "id": "superspine1",
+      "icon": "router",
+      "position": {
+        "x": 105,
+        "y": 301
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      }
+    },
+    {
+      "id": "superspine2",
+      "icon": "router",
+      "position": {
+        "x": 203,
+        "y": 301
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      }
+    },
+    {
+      "id": "client1",
+      "icon": "router",
+      "position": {
+        "x": 301,
+        "y": 301
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      }
+    },
+    {
+      "id": "client2",
+      "icon": "router",
+      "position": {
+        "x": 399,
+        "y": 301
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      }
+    },
+    {
+      "id": "client3",
+      "icon": "router",
+      "position": {
+        "x": 301,
+        "y": 21
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      }
+    },
+    {
+      "id": "client4",
+      "icon": "router",
+      "position": {
+        "x": 399,
+        "y": 21
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      }
+    }
+  ],
+  "aliasEndpointAnnotations": []
+}

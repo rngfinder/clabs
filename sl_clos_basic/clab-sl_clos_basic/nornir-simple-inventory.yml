@@ -1,0 +1,56 @@
+---
+ISP:
+    username: admin
+    password: admin
+    platform: arista_ceos
+    hostname: 172.20.20.5
+R11:
+    username: admin
+    password: admin
+    platform: arista_ceos
+    hostname: 172.20.20.2
+leaf1:
+    username: admin
+    password: admin
+    platform: arista_ceos
+    hostname: 172.20.20.7
+leaf2:
+    username: admin
+    password: admin
+    platform: arista_ceos
+    hostname: 172.20.20.11
+leaf3:
+    username: admin
+    password: admin
+    platform: arista_ceos
+    hostname: 172.20.20.8
+spine1:
+    username: admin
+    password: admin
+    platform: arista_ceos
+    hostname: 172.20.20.10
+spine2:
+    username: admin
+    password: admin
+    platform: arista_ceos
+    hostname: 172.20.20.9
+pc1:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.3
+pc2:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.6
+pc3:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.12
+pc4:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.4
