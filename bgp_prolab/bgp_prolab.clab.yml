@@ -1,0 +1,46 @@
+# topology documentation: https://networklessons.com/bgp/bgp-professional-lab-1
+name: bgp_prolab
+
+topology:
+  
+  kinds: 
+    arista_ceos:
+      image: ceos:4.34.0F
+  
+  nodes:
+    ISP:
+      kind: arista_ceos
+    R1:
+      kind: arista_ceos
+    R2:
+      kind: arista_ceos
+    R3:
+      kind: arista_ceos
+    R4:
+      kind: arista_ceos
+    R5:
+      kind: arista_ceos
+    R6:
+      kind: arista_ceos
+    R7:
+      kind: arista_ceos
+    R8:
+      kind: arista_ceos
+    R9:
+      kind: arista_ceos  
+      
+      
+  links:
+    - endpoints: ["ISP:eth1", "R1:eth1"]
+    - endpoints: ["R1:eth2", "R4:eth1"]
+    - endpoints: ["R1:eth3", "R2:eth1"]
+    - endpoints: ["R1:eth4", "R3:eth1"]
+    - endpoints: ["R2:eth2", "R3:eth2"]
+    - endpoints: ["R2:eth3", "R4:eth2"]
+    - endpoints: ["R3:eth3", "R5:eth1"]
+    - endpoints: ["R4:eth3", "R5:eth2"]
+    - endpoints: ["R4:eth4", "R6:eth1"]
+    - endpoints: ["R5:eth3", "R7:eth1"]
+    - endpoints: ["R5:eth4", "R8:eth1"]
+    - endpoints: ["R6:eth2", "R7:eth2"]
+    - endpoints: ["R8:eth2", "R9:eth1"]
