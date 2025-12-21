@@ -12,16 +12,16 @@ all:
         ansible_password: admin
       hosts:
         clab-bgp_31d_3n-R1:
-          ansible_host: 172.20.20.6
+          ansible_host: 172.20.20.5
         clab-bgp_31d_3n-R2:
-          ansible_host: 172.20.20.3
+          ansible_host: 172.20.20.6
         clab-bgp_31d_3n-SP1:
-          ansible_host: 172.20.20.2
+          ansible_host: 172.20.20.7
     linux:
       hosts:
         clab-bgp_31d_3n-client1:
-          ansible_host: 172.20.20.4
+          ansible_host: 172.20.20.2
         clab-bgp_31d_3n-client2:
-          ansible_host: 172.20.20.7
+          ansible_host: 172.20.20.3
         clab-bgp_31d_3n-client3:
-          ansible_host: 172.20.20.5
+          ansible_host: 172.20.20.4
