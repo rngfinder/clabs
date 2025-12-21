@@ -1,4 +1,4 @@
-! Startup-config last modified at Sun Dec 21 15:56:47 2025 by admin
+! Startup-config last modified at Sun Dec 21 18:06:23 2025 by admin
 ! device: R4 (cEOSLab, EOS-4.34.0F-41641815.4340F (engineering build))
 !
 no aaa root
@@ -48,8 +48,8 @@ interface Loopback0
    ip address 4.4.4.4/32
 !
 interface Management0
-   ip address 172.20.20.3/24
-   ipv6 address 3fff:172:20:20::3/64
+   ip address 172.20.20.10/24
+   ipv6 address 3fff:172:20:20::a/64
 !
 ip routing
 !
@@ -63,6 +63,8 @@ router bgp 45
    neighbor 6.6.6.6 remote-as 67
    neighbor 6.6.6.6 update-source Loopback0
    neighbor 6.6.6.6 ebgp-multihop 2
+   neighbor 192.168.14.1 remote-as 1
+   neighbor 192.168.24.2 remote-as 23
 !
 router multicast
    ipv4

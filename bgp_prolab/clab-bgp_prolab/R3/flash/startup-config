@@ -1,4 +1,4 @@
-! Startup-config last modified at Sun Dec 21 16:03:59 2025 by admin
+! Startup-config last modified at Sun Dec 21 17:09:23 2025 by admin
 ! device: R3 (cEOSLab, EOS-4.34.0F-41641815.4340F (engineering build))
 !
 no aaa root
@@ -13,6 +13,8 @@ no service interface inactive port-id allocation disabled
 transceiver qsfp default-mode 4x10G
 !
 service routing protocols model multi-agent
+!
+logging monitor errors
 !
 hostname R3
 !
@@ -44,8 +46,8 @@ interface Loopback0
    ip address 3.3.3.3/32
 !
 interface Management0
-   ip address 172.20.20.10/24
-   ipv6 address 3fff:172:20:20::a/64
+   ip address 172.20.20.6/24
+   ipv6 address 3fff:172:20:20::6/64
 !
 ip routing
 !
@@ -54,6 +56,8 @@ ipv6 route ::/0 3fff:172:20:20::1
 router bgp 23
    neighbor 2.2.2.2 remote-as 23
    neighbor 2.2.2.2 update-source Loopback0
+   neighbor 192.168.13.1 remote-as 1
+   neighbor 192.168.35.5 remote-as 4567
 !
 router multicast
    ipv4

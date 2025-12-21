@@ -1,4 +1,4 @@
-! Startup-config last modified at Sun Dec 21 15:52:04 2025 by root
+! Startup-config last modified at Sun Dec 21 19:06:00 2025 by admin
 ! device: ISP (cEOSLab, EOS-4.34.0F-41641815.4340F (engineering build))
 !
 no aaa root
@@ -33,15 +33,105 @@ interface Ethernet1
    ip address 203.0.113.2/30
    ipv6 address 2001:db8::2/64
 !
+interface Loopback0
+   ip address 10.0.0.1/32
+   ipv6 address 2001:db8:1::1/128
+!
+interface Loopback1
+   ip address 12.34.0.1/16
+   ipv6 address 2001:db8:12:34::1/64
+!
+interface Loopback2
+   ip address 23.45.0.1/16
+   ipv6 address 2001:db8:23:45::1/64
+!
+interface Loopback3
+   ip address 66.77.0.1/17
+   ipv6 address 2001:db8:66:77::1/64
+!
+interface Loopback4
+   ip address 89.100.0.1/18
+   ipv6 address 2001:db8:89:100::1/64
+!
+interface Loopback5
+   ip address 91.200.0.1/18
+   ipv6 address 2001:db8:91:200::1/64
+!
+interface Loopback6
+   ip address 102.64.0.1/18
+   ipv6 address 2001:db8:102:64::1/64
+!
+interface Loopback7
+   ip address 123.45.0.1/17
+   ipv6 address 2001:db8:123:45::1/64
+!
+interface Loopback8
+   ip address 130.25.0.1/18
+   ipv6 address 2001:db8:130:25::1/64
+!
+interface Loopback9
+   ip address 175.45.200.1/21
+   ipv6 address 2001:db8:175:45::1/64
+!
+interface Loopback10
+   ip address 183.77.220.1/22
+   ipv6 address 2001:db8:183:77::1/64
+!
+interface Loopback11
+   ip address 185.100.0.1/19
+   ipv6 address 2001:db8:185:100::1/64
+!
+interface Loopback12
+   ip address 190.30.128.1/17
+   ipv6 address 2001:db8:190:32::1/64
+!
+interface Loopback13
+   ip address 195.225.0.1/19
+   ipv6 address 2001:db8:195:225::1/64
+!
+interface Loopback14
+   ip address 199.10.192.1/22
+   ipv6 address 2001:db8:199:10::1/64
+!
+interface Loopback15
+   ip address 210.45.128.1/23
+   ipv6 address 2001:db8:210:45::1/64
+!
+interface Loopback16
+   ip address 212.12.16.1/21
+   ipv6 address 2001:db8:212:12::1/64
+!
+interface Loopback17
+   ip address 216.80.192.1/22
+   ipv6 address 2001:db8:216:80::1/64
+!
+interface Loopback18
+   ip address 220.85.200.1/23
+   ipv6 address 2001:db8:220:85::1/64
+!
+interface Loopback19
+   ip address 221.25.0.1/19
+   ipv6 address 2001:db8:225:25::1/64
+!
 interface Management0
-   ip address 172.20.20.2/24
-   ipv6 address 3fff:172:20:20::2/64
+   ip address 172.20.20.8/24
+   ipv6 address 3fff:172:20:20::8/64
 !
 ip routing
 !
 ipv6 unicast-routing
 !
 ipv6 route ::/0 3fff:172:20:20::1
+!
+router bgp 999
+   neighbor 203.0.113.1 remote-as 1
+   neighbor 2001:db8::1 remote-as 1
+   !
+   address-family ipv4
+      no neighbor 2001:db8::1 activate
+   !
+   address-family ipv6
+      neighbor 2001:db8::1 activate
 !
 router multicast
    ipv4
