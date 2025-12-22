@@ -1,0 +1,148 @@
+{
+  "name": "iol",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-4100ca9cc551",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "router1": {
+      "index": "0",
+      "shortname": "router1",
+      "longname": "clab-iol-router1",
+      "fqdn": "router1.iol.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/iol/clab-iol/router1",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:17.15.01",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-4100ca9cc551",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/iol/clab-iol/router1",
+        "clab-node-longname": "clab-iol-router1",
+        "clab-node-name": "router1",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/iol/iol.clab.yml",
+        "containerlab": "iol"
+      },
+      "port-bindings": [
+      ]
+    },
+    "router2": {
+      "index": "1",
+      "shortname": "router2",
+      "longname": "clab-iol-router2",
+      "fqdn": "router2.iol.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/iol/clab-iol/router2",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:17.15.01",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-4100ca9cc551",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/iol/clab-iol/router2",
+        "clab-node-longname": "clab-iol-router2",
+        "clab-node-name": "router2",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/iol/iol.clab.yml",
+        "containerlab": "iol"
+      },
+      "port-bindings": [
+      ]
+    },
+    "switch": {
+      "index": "2",
+      "shortname": "switch",
+      "longname": "clab-iol-switch",
+      "fqdn": "switch.iol.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/iol/clab-iol/switch",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:L2-17.15.01",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-4100ca9cc551",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/iol/clab-iol/switch",
+        "clab-node-longname": "clab-iol-switch",
+        "clab-node-name": "switch",
+        "clab-node-type": "L2",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/iol/iol.clab.yml",
+        "containerlab": "iol"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "router1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:35:c7:8a",
+          "peer": "z"
+        },
+        "z": {
+          "node": "switch",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:b9:74:fc",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "router2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:17:3c:35",
+          "peer": "z"
+        },
+        "z": {
+          "node": "switch",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:5b:a6:99",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}

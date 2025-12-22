@@ -1,0 +1,51 @@
+---
+ISP:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.3
+R1:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.10
+R2:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.4
+R3:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.11
+R4:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.2
+R5:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.9
+R6:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.7
+R7:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.6
+R8:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.8
+R9:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.5

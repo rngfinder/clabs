@@ -1,0 +1,50 @@
+name: bgp_proiol
+
+topology:
+  kinds:
+    cisco_iol:
+      image: vrnetlab/cisco_iol:17.15.01
+
+  nodes:
+    ISP:
+      kind: cisco_iol
+    R1:
+      kind: cisco_iol
+    R2:
+      kind: cisco_iol
+    R3:
+      kind: cisco_iol
+    R4:
+      kind: cisco_iol
+    R5:
+      kind: cisco_iol
+    R6:
+      kind: cisco_iol
+    R7:
+      kind: cisco_iol
+    R8:
+      kind: cisco_iol
+    R9:
+      kind: cisco_iol
+
+  links:
+    - endpoints: ["ISP:Ethernet1/0","R1:Ethernet1/0"]
+    - endpoints: ["R1:Ethernet1/1","R4:Ethernet1/0"]
+    - endpoints: ["R1:Ethernet1/2","R2:Ethernet1/0"]
+    - endpoints: ["R1:Ethernet1/3","R3:Ethernet1/0"]
+    - endpoints: ["R2:Ethernet1/1","R3:Ethernet1/1"]
+    - endpoints: ["R2:Ethernet1/2","R4:Ethernet1/1"]
+    - endpoints: ["R3:Ethernet1/2","R5:Ethernet1/0"]
+    - endpoints: ["R4:Ethernet1/2","R5:Ethernet1/1"]
+    - endpoints: ["R4:Ethernet1/3","R6:Ethernet1/0"]
+    - endpoints: ["R5:Ethernet1/2","R7:Ethernet1/0"]
+    - endpoints: ["R5:Ethernet1/3","R8:Ethernet1/0"]
+    - endpoints: ["R6:Ethernet1/1","R7:Ethernet1/1"]
+    - endpoints: ["R8:Ethernet1/1","R9:Ethernet1/0"]
+
+
+
+
+
+
+

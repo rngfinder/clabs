@@ -1,4 +1,4 @@
-! Startup-config last modified at Sun Dec 21 16:51:13 2025 by root
+! Startup-config last modified at Mon Dec 22 05:15:55 2025 by root
 ! device: R6 (cEOSLab, EOS-4.34.0F-41641815.4340F (engineering build))
 !
 no aaa root
@@ -55,13 +55,6 @@ router bgp 67
    neighbor 4.4.4.4 ebgp-multihop 2
    neighbor 7.7.7.7 remote-as 67
    neighbor 7.7.7.7 update-source Loopback0
-!
-router multicast
-   ipv4
-      software-forwarding kernel
-   !
-   ipv6
-      software-forwarding kernel
 !
 router ospf 1
    network 6.6.6.6/32 area 0.0.0.0
