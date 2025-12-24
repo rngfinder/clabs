@@ -1,4 +1,4 @@
-! Startup-config last modified at Wed Dec 24 05:40:11 2025 by admin
+! Startup-config last modified at Wed Dec 24 16:13:00 2025 by root
 ! device: ISP (cEOSLab, EOS-4.34.0F-41641815.4340F (engineering build))
 !
 no aaa root
@@ -114,8 +114,8 @@ interface Loopback19
    ipv6 address 2001:db8:225:25::1/64
 !
 interface Management0
-   ip address 172.20.20.10/24
-   ipv6 address 3fff:172:20:20::a/64
+   ip address 172.20.20.5/24
+   ipv6 address 3fff:172:20:20::5/64
 !
 ip routing
 !
@@ -151,12 +151,5 @@ router bgp 999
       network 2001:db8:216:80::/64
       network 2001:db8:220:85::/64
       network 2001:db8:225:25::/64
-!
-router multicast
-   ipv4
-      software-forwarding kernel
-   !
-   ipv6
-      software-forwarding kernel
 !
 end

@@ -3,49 +3,49 @@ ISP:
     username: admin
     password: admin
     platform: arista_ceos
-    hostname: 172.20.20.10
+    hostname: 172.20.20.5
 R1:
     username: admin
     password: admin
     platform: arista_ceos
-    hostname: 172.20.20.8
+    hostname: 172.20.20.4
 R2:
     username: admin
     password: admin
     platform: arista_ceos
-    hostname: 172.20.20.5
+    hostname: 172.20.20.2
 R3:
     username: admin
     password: admin
     platform: arista_ceos
-    hostname: 172.20.20.6
+    hostname: 172.20.20.9
 R4:
     username: admin
     password: admin
     platform: arista_ceos
-    hostname: 172.20.20.2
+    hostname: 172.20.20.3
 R5:
     username: admin
     password: admin
     platform: arista_ceos
-    hostname: 172.20.20.9
+    hostname: 172.20.20.8
 R6:
     username: admin
     password: admin
     platform: arista_ceos
-    hostname: 172.20.20.11
+    hostname: 172.20.20.7
 R7:
     username: admin
     password: admin
     platform: arista_ceos
-    hostname: 172.20.20.7
+    hostname: 172.20.20.10
 R8:
     username: admin
     password: admin
     platform: arista_ceos
-    hostname: 172.20.20.4
+    hostname: 172.20.20.6
 R9:
     username: admin
     password: admin
     platform: arista_ceos
-    hostname: 172.20.20.3
+    hostname: 172.20.20.11
