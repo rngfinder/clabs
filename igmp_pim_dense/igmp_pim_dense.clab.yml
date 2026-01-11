@@ -1,0 +1,32 @@
+# topology documentation: 
+name: igmp_pim_dense
+
+topology:
+  
+  kinds: 
+    arista_ceos:
+      image: ceos:4.34.0F
+  
+  nodes:
+    S1:
+      kind: arista_ceos
+    R1:
+      kind: arista_ceos
+    R2:
+      kind: arista_ceos
+    R3:
+      kind: arista_ceos
+    H2:
+      kind: arista_ceos
+    H3:
+      kind: arista_ceos
+      
+      
+      
+  links:
+    - endpoints: ["S1:eth1", "R1:eth3"]
+    - endpoints: ["R1:eth1", "R2:eth1"]
+    - endpoints: ["R1:eth2", "R3:eth1"]
+    - endpoints: ["R2:eth2", "R3:eth2"]
+    - endpoints: ["R2:eth3", "H2:eth1"]
+    - endpoints: ["R3:eth3", "H3:eth1"]
