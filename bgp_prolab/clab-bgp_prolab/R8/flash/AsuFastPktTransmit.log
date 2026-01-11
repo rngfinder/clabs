@@ -49,3 +49,9 @@
 2025-12-24 16:11:51.968394 Running AsuFastPktTransmit service
 2025-12-24 16:11:51.970058 Config path: /mnt/flash/fastpkttx Max Run Time: 600 Seconds
 2025-12-24 16:11:51.970085 WARNING: /mnt/flash/fastpkttx does not exist. Exiting.
+2025-12-24 18:19:43.135668 Running AsuFastPktTransmit service
+2025-12-24 18:19:43.136031 Config path: /mnt/flash/fastpkttx Max Run Time: 600 Seconds
+2025-12-24 18:19:43.136143 WARNING: /mnt/flash/fastpkttx does not exist. Exiting.
+2025-12-27 12:46:19.494661 Running AsuFastPktTransmit service
+2025-12-27 12:46:19.495071 Config path: /mnt/flash/fastpkttx Max Run Time: 600 Seconds
+2025-12-27 12:46:19.495115 WARNING: /mnt/flash/fastpkttx does not exist. Exiting.
