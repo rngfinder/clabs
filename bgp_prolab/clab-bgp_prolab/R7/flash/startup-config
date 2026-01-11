@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ! Startup-config last modified at Sat Dec 27 12:46:51 2025 by root
+=======
+! Startup-config last modified at Thu Dec 25 05:04:45 2025 by root
+>>>>>>> ce2b5ed053493eae74515dc1164941b63a8dfe0a
 ! device: R7 (cEOSLab, EOS-4.34.0F-41641815.4340F (engineering build))
 !
 no aaa root
@@ -40,8 +44,8 @@ interface Loopback0
    ip address 7.7.7.7/32
 !
 interface Management0
-   ip address 172.20.20.10/24
-   ipv6 address 3fff:172:20:20::a/64
+   ip address 172.20.20.9/24
+   ipv6 address 3fff:172:20:20::9/64
 !
 ip routing
 !
@@ -57,13 +61,6 @@ router bgp 67
    neighbor 6.6.6.6 remote-as 67
    neighbor 6.6.6.6 update-source Loopback0
    network 7.7.7.7/32
-!
-router multicast
-   ipv4
-      software-forwarding kernel
-   !
-   ipv6
-      software-forwarding kernel
 !
 router ospf 1
    network 7.7.7.7/32 area 0.0.0.0

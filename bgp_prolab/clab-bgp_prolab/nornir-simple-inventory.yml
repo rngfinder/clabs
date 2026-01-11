@@ -3,49 +3,85 @@ ISP:
     username: admin
     password: admin
     platform: arista_ceos
+<<<<<<< HEAD
     hostname: 172.20.20.2
+=======
+    hostname: 172.20.20.4
+>>>>>>> ce2b5ed053493eae74515dc1164941b63a8dfe0a
 R1:
     username: admin
     password: admin
     platform: arista_ceos
+<<<<<<< HEAD
     hostname: 172.20.20.5
+=======
+    hostname: 172.20.20.6
+>>>>>>> ce2b5ed053493eae74515dc1164941b63a8dfe0a
 R2:
     username: admin
     password: admin
     platform: arista_ceos
+<<<<<<< HEAD
     hostname: 172.20.20.4
+=======
+    hostname: 172.20.20.7
+>>>>>>> ce2b5ed053493eae74515dc1164941b63a8dfe0a
 R3:
     username: admin
     password: admin
     platform: arista_ceos
+<<<<<<< HEAD
     hostname: 172.20.20.3
+=======
+    hostname: 172.20.20.8
+>>>>>>> ce2b5ed053493eae74515dc1164941b63a8dfe0a
 R4:
     username: admin
     password: admin
     platform: arista_ceos
+<<<<<<< HEAD
     hostname: 172.20.20.8
+=======
+    hostname: 172.20.20.11
+>>>>>>> ce2b5ed053493eae74515dc1164941b63a8dfe0a
 R5:
     username: admin
     password: admin
     platform: arista_ceos
+<<<<<<< HEAD
     hostname: 172.20.20.6
+=======
+    hostname: 172.20.20.10
+>>>>>>> ce2b5ed053493eae74515dc1164941b63a8dfe0a
 R6:
     username: admin
     password: admin
     platform: arista_ceos
+<<<<<<< HEAD
     hostname: 172.20.20.9
+=======
+    hostname: 172.20.20.5
+>>>>>>> ce2b5ed053493eae74515dc1164941b63a8dfe0a
 R7:
     username: admin
     password: admin
     platform: arista_ceos
-    hostname: 172.20.20.10
+    hostname: 172.20.20.9
 R8:
     username: admin
     password: admin
     platform: arista_ceos
+<<<<<<< HEAD
     hostname: 172.20.20.11
+=======
+    hostname: 172.20.20.2
+>>>>>>> ce2b5ed053493eae74515dc1164941b63a8dfe0a
 R9:
     username: admin
     password: admin
     platform: arista_ceos
+<<<<<<< HEAD
     hostname: 172.20.20.7
+=======
+    hostname: 172.20.20.3
+>>>>>>> ce2b5ed053493eae74515dc1164941b63a8dfe0a

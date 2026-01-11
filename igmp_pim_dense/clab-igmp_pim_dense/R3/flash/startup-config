@@ -1,0 +1,67 @@
+! Startup-config last modified at Sun Jan 11 16:29:20 2026 by admin
+! device: R3 (cEOSLab, EOS-4.34.0F-41641815.4340F (engineering build))
+!
+no aaa root
+!
+username admin privilege 15 role network-admin secret sha512 $6$bFCnnVemQ4MkVFrb$TOPAf4Gd6nKhUbgOsP65pZM1eRWDBVQEUgE8rDGwmHjFT20XZgzTqpdgrXRaBYwJvBe0wmwOIrRSS36gWNKt30
+!
+management api http-commands
+   no shutdown
+!
+no service interface inactive port-id allocation disabled
+!
+transceiver qsfp default-mode 4x10G
+!
+service routing protocols model multi-agent
+!
+hostname R3
+!
+spanning-tree mode mstp
+!
+system l1
+   unsupported speed action error
+   unsupported error-correction action error
+!
+management api gnmi
+   transport grpc default
+!
+management api netconf
+   transport ssh default
+!
+interface Ethernet1
+   no switchport
+   ip address 192.168.13.3/24
+!
+interface Ethernet2
+   no switchport
+   ip address 192.168.23.3/24
+!
+interface Ethernet3
+   no switchport
+   ip address 192.168.3.254/24
+!
+interface Management0
+   ip address 172.20.20.6/24
+   ipv6 address 3fff:172:20:20::6/64
+!
+ip routing
+!
+ip route 0.0.0.0/0 172.20.20.1
+!
+ipv6 route ::/0 3fff:172:20:20::1
+!
+router multicast
+   ipv4
+      routing
+      software-forwarding kernel
+   !
+   ipv6
+      software-forwarding kernel
+!
+router ospf 1
+   network 192.168.3.0/24 area 0.0.0.0
+   network 192.168.13.0/24 area 0.0.0.0
+   network 192.168.23.0/24 area 0.0.0.0
+   max-lsa 12000
+!
+end

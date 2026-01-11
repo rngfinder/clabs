@@ -1,0 +1,305 @@
+{
+  "name": "igmp_pim_dense",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-26a1a3b1a1fc",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "H2": {
+      "index": "0",
+      "shortname": "H2",
+      "longname": "clab-igmp_pim_dense-H2",
+      "fqdn": "H2.igmp_pim_dense.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/igmp_pim_dense/clab-igmp_pim_dense/H2",
+      "kind": "arista_ceos",
+      "image": "ceos:4.34.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:72:4b:88",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-26a1a3b1a1fc",
+        "clab-node-group": "",
+        "clab-node-kind": "arista_ceos",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/igmp_pim_dense/clab-igmp_pim_dense/H2",
+        "clab-node-longname": "clab-igmp_pim_dense-H2",
+        "clab-node-name": "H2",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/igmp_pim_dense/igmp_pim_dense.clab.yml",
+        "containerlab": "igmp_pim_dense"
+      },
+      "port-bindings": [
+      ]
+    },
+    "H3": {
+      "index": "1",
+      "shortname": "H3",
+      "longname": "clab-igmp_pim_dense-H3",
+      "fqdn": "H3.igmp_pim_dense.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/igmp_pim_dense/clab-igmp_pim_dense/H3",
+      "kind": "arista_ceos",
+      "image": "ceos:4.34.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:04:e8:f7",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-26a1a3b1a1fc",
+        "clab-node-group": "",
+        "clab-node-kind": "arista_ceos",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/igmp_pim_dense/clab-igmp_pim_dense/H3",
+        "clab-node-longname": "clab-igmp_pim_dense-H3",
+        "clab-node-name": "H3",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/igmp_pim_dense/igmp_pim_dense.clab.yml",
+        "containerlab": "igmp_pim_dense"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R1": {
+      "index": "2",
+      "shortname": "R1",
+      "longname": "clab-igmp_pim_dense-R1",
+      "fqdn": "R1.igmp_pim_dense.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/igmp_pim_dense/clab-igmp_pim_dense/R1",
+      "kind": "arista_ceos",
+      "image": "ceos:4.34.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:08:2e:e5",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-26a1a3b1a1fc",
+        "clab-node-group": "",
+        "clab-node-kind": "arista_ceos",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/igmp_pim_dense/clab-igmp_pim_dense/R1",
+        "clab-node-longname": "clab-igmp_pim_dense-R1",
+        "clab-node-name": "R1",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/igmp_pim_dense/igmp_pim_dense.clab.yml",
+        "containerlab": "igmp_pim_dense"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R2": {
+      "index": "3",
+      "shortname": "R2",
+      "longname": "clab-igmp_pim_dense-R2",
+      "fqdn": "R2.igmp_pim_dense.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/igmp_pim_dense/clab-igmp_pim_dense/R2",
+      "kind": "arista_ceos",
+      "image": "ceos:4.34.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:d3:e7:68",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-26a1a3b1a1fc",
+        "clab-node-group": "",
+        "clab-node-kind": "arista_ceos",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/igmp_pim_dense/clab-igmp_pim_dense/R2",
+        "clab-node-longname": "clab-igmp_pim_dense-R2",
+        "clab-node-name": "R2",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/igmp_pim_dense/igmp_pim_dense.clab.yml",
+        "containerlab": "igmp_pim_dense"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R3": {
+      "index": "4",
+      "shortname": "R3",
+      "longname": "clab-igmp_pim_dense-R3",
+      "fqdn": "R3.igmp_pim_dense.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/igmp_pim_dense/clab-igmp_pim_dense/R3",
+      "kind": "arista_ceos",
+      "image": "ceos:4.34.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:fc:e5:b3",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-26a1a3b1a1fc",
+        "clab-node-group": "",
+        "clab-node-kind": "arista_ceos",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/igmp_pim_dense/clab-igmp_pim_dense/R3",
+        "clab-node-longname": "clab-igmp_pim_dense-R3",
+        "clab-node-name": "R3",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/igmp_pim_dense/igmp_pim_dense.clab.yml",
+        "containerlab": "igmp_pim_dense"
+      },
+      "port-bindings": [
+      ]
+    },
+    "S1": {
+      "index": "5",
+      "shortname": "S1",
+      "longname": "clab-igmp_pim_dense-S1",
+      "fqdn": "S1.igmp_pim_dense.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/igmp_pim_dense/clab-igmp_pim_dense/S1",
+      "kind": "arista_ceos",
+      "image": "ceos:4.34.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.7",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::7",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:1d:fa:1c",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-26a1a3b1a1fc",
+        "clab-node-group": "",
+        "clab-node-kind": "arista_ceos",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/igmp_pim_dense/clab-igmp_pim_dense/S1",
+        "clab-node-longname": "clab-igmp_pim_dense-S1",
+        "clab-node-name": "S1",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/igmp_pim_dense/igmp_pim_dense.clab.yml",
+        "containerlab": "igmp_pim_dense"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "S1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:5f:41:b8",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R1",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:81:06:8f",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:37:e8:eb",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:34:8f:f3",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R1",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:df:d7:95",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:a0:a6:35",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:ea:74:27",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R3",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:e3:77:b6",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R2",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:d6:f6:d4",
+          "peer": "z"
+        },
+        "z": {
+          "node": "H2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:c4:45:cd",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R3",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:b3:0e:36",
+          "peer": "z"
+        },
+        "z": {
+          "node": "H3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:38:99:3a",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}
