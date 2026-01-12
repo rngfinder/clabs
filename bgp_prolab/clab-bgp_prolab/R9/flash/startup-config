@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+! Startup-config last modified at Sat Dec 27 16:43:13 2025 by admin
+=======
 ! Startup-config last modified at Thu Dec 25 05:04:45 2025 by root
+>>>>>>> ce2b5ed053493eae74515dc1164941b63a8dfe0a
 ! device: R9 (cEOSLab, EOS-4.34.0F-41641815.4340F (engineering build))
 !
 no aaa root
@@ -36,8 +40,13 @@ interface Loopback0
    ip address 9.9.9.9/32
 !
 interface Management0
+<<<<<<< HEAD
+   ip address 172.20.20.7/24
+   ipv6 address 3fff:172:20:20::7/64
+=======
    ip address 172.20.20.3/24
    ipv6 address 3fff:172:20:20::3/64
+>>>>>>> ce2b5ed053493eae74515dc1164941b63a8dfe0a
 !
 interface Tunnel0
    ip address 192.168.59.9/24
