@@ -1,0 +1,28 @@
+name: igmp_pimd_iol
+
+topology:
+  kinds:
+    cisco_iol:
+      image: vrnetlab/cisco_iol:17.15.01
+
+  nodes:
+    S1:
+      kind: cisco_iol
+    R1:
+      kind: cisco_iol
+    R2:
+      kind: cisco_iol
+    R3:
+      kind: cisco_iol
+    H2:
+      kind: cisco_iol
+    H3:
+      kind: cisco_iol
+    
+  links:
+    - endpoints: ["S1:Ethernet0/1","R1:Ethernet0/3"]
+    - endpoints: ["R1:Ethernet0/1","R2:Ethernet0/1"]
+    - endpoints: ["R1:Ethernet0/2","R3:Ethernet0/1"]
+    - endpoints: ["R2:Ethernet0/2","R3:Ethernet0/2"]
+    - endpoints: ["R2:Ethernet0/3","H2:Ethernet0/1"]
+    - endpoints: ["R3:Ethernet0/3","H3:Ethernet0/1"]

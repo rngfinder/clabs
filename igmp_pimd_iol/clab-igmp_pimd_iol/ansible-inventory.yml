@@ -11,23 +11,15 @@ all:
         ansible_user: admin
         ansible_password: admin
       hosts:
-        clab-bgp_proiol-ISP:
-          ansible_host: 172.20.20.10
-        clab-bgp_proiol-R1:
+        clab-igmp_pimd_iol-H2:
           ansible_host: 172.20.20.7
-        clab-bgp_proiol-R2:
+        clab-igmp_pimd_iol-H3:
           ansible_host: 172.20.20.5
-        clab-bgp_proiol-R3:
-          ansible_host: 172.20.20.9
-        clab-bgp_proiol-R4:
-          ansible_host: 172.20.20.8
-        clab-bgp_proiol-R5:
+        clab-igmp_pimd_iol-R1:
           ansible_host: 172.20.20.2
-        clab-bgp_proiol-R6:
+        clab-igmp_pimd_iol-R2:
           ansible_host: 172.20.20.4
-        clab-bgp_proiol-R7:
-          ansible_host: 172.20.20.6
-        clab-bgp_proiol-R8:
+        clab-igmp_pimd_iol-R3:
           ansible_host: 172.20.20.3
-        clab-bgp_proiol-R9:
-          ansible_host: 172.20.20.11
+        clab-igmp_pimd_iol-S1:
+          ansible_host: 172.20.20.6
