@@ -1,10 +1,5 @@
 ---
-H2:
-    username: admin
-    password: admin
-    platform: cisco_iol
-    hostname: 172.20.20.6
-H3:
+H1:
     username: admin
     password: admin
     platform: cisco_iol
@@ -13,12 +8,12 @@ R1:
     username: admin
     password: admin
     platform: cisco_iol
-    hostname: 172.20.20.4
+    hostname: 172.20.20.6
 R2:
     username: admin
     password: admin
     platform: cisco_iol
-    hostname: 172.20.20.2
+    hostname: 172.20.20.4
 R3:
     username: admin
     password: admin
@@ -28,4 +23,4 @@ S1:
     username: admin
     password: admin
     platform: cisco_iol
-    hostname: 172.20.20.7
+    hostname: 172.20.20.2

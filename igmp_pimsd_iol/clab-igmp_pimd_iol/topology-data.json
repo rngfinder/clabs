@@ -6,7 +6,7 @@
       "prefix": "clab",
       "mgmt": {
         "network": "clab",
-        "bridge": "br-e887d50faef8",
+        "bridge": "br-f9ce042371ea",
         "ipv4-subnet": "172.20.20.0/24",
         "ipv4-gw": "172.20.20.1",
         "ipv6-subnet": "3fff:172:20:20::/64",
@@ -17,44 +17,13 @@
   },
   "ssh-pub-keys": [],
   "nodes": {
-    "H2": {
+    "H1": {
       "index": "0",
-      "shortname": "H2",
-      "longname": "clab-igmp_pimd_iol-H2",
-      "fqdn": "H2.igmp_pimd_iol.io",
+      "shortname": "H1",
+      "longname": "clab-igmp_pimd_iol-H1",
+      "fqdn": "H1.igmp_pimd_iol.io",
       "group": "",
-      "labdir": "/home/sysadmin/_repos/clabs/igmp_pimd_iol/clab-igmp_pimd_iol/H2",
-      "kind": "cisco_iol",
-      "image": "vrnetlab/cisco_iol:17.16.01a",
-      "mgmt-net": "",
-      "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.6",
-      "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::6",
-      "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "",
-      "labels": {
-        "clab-mgmt-net-bridge": "br-e887d50faef8",
-        "clab-node-group": "",
-        "clab-node-kind": "cisco_iol",
-        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/igmp_pimd_iol/clab-igmp_pimd_iol/H2",
-        "clab-node-longname": "clab-igmp_pimd_iol-H2",
-        "clab-node-name": "H2",
-        "clab-node-type": "",
-        "clab-owner": "sysadmin",
-        "clab-topo-file": "/home/sysadmin/_repos/clabs/igmp_pimd_iol/igmp_pimd_iol.clab.yml",
-        "containerlab": "igmp_pimd_iol"
-      },
-      "port-bindings": [
-      ]
-    },
-    "H3": {
-      "index": "1",
-      "shortname": "H3",
-      "longname": "clab-igmp_pimd_iol-H3",
-      "fqdn": "H3.igmp_pimd_iol.io",
-      "group": "",
-      "labdir": "/home/sysadmin/_repos/clabs/igmp_pimd_iol/clab-igmp_pimd_iol/H3",
+      "labdir": "/home/sysadmin/_repos/clabs/igmp_pimsd_iol/clab-igmp_pimd_iol/H1",
       "kind": "cisco_iol",
       "image": "vrnetlab/cisco_iol:17.16.01a",
       "mgmt-net": "",
@@ -65,27 +34,58 @@
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-e887d50faef8",
+        "clab-mgmt-net-bridge": "br-f9ce042371ea",
         "clab-node-group": "",
         "clab-node-kind": "cisco_iol",
-        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/igmp_pimd_iol/clab-igmp_pimd_iol/H3",
-        "clab-node-longname": "clab-igmp_pimd_iol-H3",
-        "clab-node-name": "H3",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/igmp_pimsd_iol/clab-igmp_pimd_iol/H1",
+        "clab-node-longname": "clab-igmp_pimd_iol-H1",
+        "clab-node-name": "H1",
         "clab-node-type": "",
         "clab-owner": "sysadmin",
-        "clab-topo-file": "/home/sysadmin/_repos/clabs/igmp_pimd_iol/igmp_pimd_iol.clab.yml",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/igmp_pimsd_iol/igmp_pimsd_iol.clab.yml",
         "containerlab": "igmp_pimd_iol"
       },
       "port-bindings": [
       ]
     },
     "R1": {
-      "index": "2",
+      "index": "1",
       "shortname": "R1",
       "longname": "clab-igmp_pimd_iol-R1",
       "fqdn": "R1.igmp_pimd_iol.io",
       "group": "",
-      "labdir": "/home/sysadmin/_repos/clabs/igmp_pimd_iol/clab-igmp_pimd_iol/R1",
+      "labdir": "/home/sysadmin/_repos/clabs/igmp_pimsd_iol/clab-igmp_pimd_iol/R1",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:17.16.01a",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-f9ce042371ea",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/igmp_pimsd_iol/clab-igmp_pimd_iol/R1",
+        "clab-node-longname": "clab-igmp_pimd_iol-R1",
+        "clab-node-name": "R1",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/igmp_pimsd_iol/igmp_pimsd_iol.clab.yml",
+        "containerlab": "igmp_pimd_iol"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R2": {
+      "index": "2",
+      "shortname": "R2",
+      "longname": "clab-igmp_pimd_iol-R2",
+      "fqdn": "R2.igmp_pimd_iol.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/igmp_pimsd_iol/clab-igmp_pimd_iol/R2",
       "kind": "cisco_iol",
       "image": "vrnetlab/cisco_iol:17.16.01a",
       "mgmt-net": "",
@@ -96,58 +96,27 @@
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-e887d50faef8",
+        "clab-mgmt-net-bridge": "br-f9ce042371ea",
         "clab-node-group": "",
         "clab-node-kind": "cisco_iol",
-        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/igmp_pimd_iol/clab-igmp_pimd_iol/R1",
-        "clab-node-longname": "clab-igmp_pimd_iol-R1",
-        "clab-node-name": "R1",
-        "clab-node-type": "",
-        "clab-owner": "sysadmin",
-        "clab-topo-file": "/home/sysadmin/_repos/clabs/igmp_pimd_iol/igmp_pimd_iol.clab.yml",
-        "containerlab": "igmp_pimd_iol"
-      },
-      "port-bindings": [
-      ]
-    },
-    "R2": {
-      "index": "3",
-      "shortname": "R2",
-      "longname": "clab-igmp_pimd_iol-R2",
-      "fqdn": "R2.igmp_pimd_iol.io",
-      "group": "",
-      "labdir": "/home/sysadmin/_repos/clabs/igmp_pimd_iol/clab-igmp_pimd_iol/R2",
-      "kind": "cisco_iol",
-      "image": "vrnetlab/cisco_iol:17.16.01a",
-      "mgmt-net": "",
-      "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.2",
-      "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::2",
-      "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "",
-      "labels": {
-        "clab-mgmt-net-bridge": "br-e887d50faef8",
-        "clab-node-group": "",
-        "clab-node-kind": "cisco_iol",
-        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/igmp_pimd_iol/clab-igmp_pimd_iol/R2",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/igmp_pimsd_iol/clab-igmp_pimd_iol/R2",
         "clab-node-longname": "clab-igmp_pimd_iol-R2",
         "clab-node-name": "R2",
         "clab-node-type": "",
         "clab-owner": "sysadmin",
-        "clab-topo-file": "/home/sysadmin/_repos/clabs/igmp_pimd_iol/igmp_pimd_iol.clab.yml",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/igmp_pimsd_iol/igmp_pimsd_iol.clab.yml",
         "containerlab": "igmp_pimd_iol"
       },
       "port-bindings": [
       ]
     },
     "R3": {
-      "index": "4",
+      "index": "3",
       "shortname": "R3",
       "longname": "clab-igmp_pimd_iol-R3",
       "fqdn": "R3.igmp_pimd_iol.io",
       "group": "",
-      "labdir": "/home/sysadmin/_repos/clabs/igmp_pimd_iol/clab-igmp_pimd_iol/R3",
+      "labdir": "/home/sysadmin/_repos/clabs/igmp_pimsd_iol/clab-igmp_pimd_iol/R3",
       "kind": "cisco_iol",
       "image": "vrnetlab/cisco_iol:17.16.01a",
       "mgmt-net": "",
@@ -158,46 +127,46 @@
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-e887d50faef8",
+        "clab-mgmt-net-bridge": "br-f9ce042371ea",
         "clab-node-group": "",
         "clab-node-kind": "cisco_iol",
-        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/igmp_pimd_iol/clab-igmp_pimd_iol/R3",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/igmp_pimsd_iol/clab-igmp_pimd_iol/R3",
         "clab-node-longname": "clab-igmp_pimd_iol-R3",
         "clab-node-name": "R3",
         "clab-node-type": "",
         "clab-owner": "sysadmin",
-        "clab-topo-file": "/home/sysadmin/_repos/clabs/igmp_pimd_iol/igmp_pimd_iol.clab.yml",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/igmp_pimsd_iol/igmp_pimsd_iol.clab.yml",
         "containerlab": "igmp_pimd_iol"
       },
       "port-bindings": [
       ]
     },
     "S1": {
-      "index": "5",
+      "index": "4",
       "shortname": "S1",
       "longname": "clab-igmp_pimd_iol-S1",
       "fqdn": "S1.igmp_pimd_iol.io",
       "group": "",
-      "labdir": "/home/sysadmin/_repos/clabs/igmp_pimd_iol/clab-igmp_pimd_iol/S1",
+      "labdir": "/home/sysadmin/_repos/clabs/igmp_pimsd_iol/clab-igmp_pimd_iol/S1",
       "kind": "cisco_iol",
       "image": "vrnetlab/cisco_iol:17.16.01a",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.7",
+      "mgmt-ipv4-address": "172.20.20.2",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::7",
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-e887d50faef8",
+        "clab-mgmt-net-bridge": "br-f9ce042371ea",
         "clab-node-group": "",
         "clab-node-kind": "cisco_iol",
-        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/igmp_pimd_iol/clab-igmp_pimd_iol/S1",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/igmp_pimsd_iol/clab-igmp_pimd_iol/S1",
         "clab-node-longname": "clab-igmp_pimd_iol-S1",
         "clab-node-name": "S1",
         "clab-node-type": "",
         "clab-owner": "sysadmin",
-        "clab-topo-file": "/home/sysadmin/_repos/clabs/igmp_pimd_iol/igmp_pimd_iol.clab.yml",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/igmp_pimsd_iol/igmp_pimsd_iol.clab.yml",
         "containerlab": "igmp_pimd_iol"
       },
       "port-bindings": [
@@ -210,13 +179,13 @@
         "a": {
           "node": "S1",
           "interface": "eth1",
-          "mac": "aa:c1:ab:c5:59:c5",
+          "mac": "aa:c1:ab:ae:aa:73",
           "peer": "z"
         },
         "z": {
           "node": "R1",
-          "interface": "eth3",
-          "mac": "aa:c1:ab:8e:15:c9",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:00:5c:d0",
           "peer": "a"
         }
       }
@@ -226,29 +195,13 @@
         "a": {
           "node": "R1",
           "interface": "eth1",
-          "mac": "aa:c1:ab:47:9b:70",
+          "mac": "aa:c1:ab:f9:a9:0a",
           "peer": "z"
         },
         "z": {
           "node": "R2",
           "interface": "eth1",
-          "mac": "aa:c1:ab:ca:f6:4d",
-          "peer": "a"
-        }
-      }
-    },
-    {
-      "endpoints": {
-        "a": {
-          "node": "R1",
-          "interface": "eth2",
-          "mac": "aa:c1:ab:50:97:0d",
-          "peer": "z"
-        },
-        "z": {
-          "node": "R3",
-          "interface": "eth1",
-          "mac": "aa:c1:ab:1c:40:4f",
+          "mac": "aa:c1:ab:14:02:be",
           "peer": "a"
         }
       }
@@ -258,45 +211,29 @@
         "a": {
           "node": "R2",
           "interface": "eth2",
-          "mac": "aa:c1:ab:4e:fb:1f",
+          "mac": "aa:c1:ab:eb:c1:1a",
           "peer": "z"
         },
         "z": {
+          "node": "R3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:3a:64:30",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
           "node": "R3",
           "interface": "eth2",
-          "mac": "aa:c1:ab:34:b4:e2",
-          "peer": "a"
-        }
-      }
-    },
-    {
-      "endpoints": {
-        "a": {
-          "node": "R2",
-          "interface": "eth3",
-          "mac": "aa:c1:ab:d8:53:9c",
+          "mac": "aa:c1:ab:ee:1f:31",
           "peer": "z"
         },
         "z": {
-          "node": "H2",
+          "node": "H1",
           "interface": "eth1",
-          "mac": "aa:c1:ab:16:53:38",
-          "peer": "a"
-        }
-      }
-    },
-    {
-      "endpoints": {
-        "a": {
-          "node": "R3",
-          "interface": "eth3",
-          "mac": "aa:c1:ab:bd:96:bc",
-          "peer": "z"
-        },
-        "z": {
-          "node": "H3",
-          "interface": "eth1",
-          "mac": "aa:c1:ab:bf:89:28",
+          "mac": "aa:c1:ab:e3:2a:64",
           "peer": "a"
         }
       }

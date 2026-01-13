@@ -14,15 +14,11 @@ topology:
       kind: cisco_iol
     R3:
       kind: cisco_iol
-    H2:
-      kind: cisco_iol
-    H3:
+    H1:
       kind: cisco_iol
     
   links:
-    - endpoints: ["S1:Ethernet0/1","R1:Ethernet0/3"]
+    - endpoints: ["S1:Ethernet0/1","R1:Ethernet0/2"]
     - endpoints: ["R1:Ethernet0/1","R2:Ethernet0/1"]
-    - endpoints: ["R1:Ethernet0/2","R3:Ethernet0/1"]
-    - endpoints: ["R2:Ethernet0/2","R3:Ethernet0/2"]
-    - endpoints: ["R2:Ethernet0/3","H2:Ethernet0/1"]
-    - endpoints: ["R3:Ethernet0/3","H3:Ethernet0/1"]
+    - endpoints: ["R2:Ethernet0/2","R3:Ethernet0/1"]
+    - endpoints: ["R3:Ethernet0/2","H1:Ethernet0/1"]
