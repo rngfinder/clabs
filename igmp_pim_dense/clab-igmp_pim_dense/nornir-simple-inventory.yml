@@ -3,29 +3,29 @@ H2:
     username: admin
     password: admin
     platform: arista_ceos
-    hostname: 172.20.20.3
+    hostname: 172.20.20.6
 H3:
     username: admin
     password: admin
     platform: arista_ceos
-    hostname: 172.20.20.2
+    hostname: 172.20.20.4
 R1:
     username: admin
     password: admin
     platform: arista_ceos
-    hostname: 172.20.20.4
+    hostname: 172.20.20.2
 R2:
     username: admin
     password: admin
     platform: arista_ceos
-    hostname: 172.20.20.5
+    hostname: 172.20.20.7
 R3:
     username: admin
     password: admin
     platform: arista_ceos
-    hostname: 172.20.20.6
+    hostname: 172.20.20.3
 S1:
     username: admin
     password: admin
     platform: arista_ceos
-    hostname: 172.20.20.7
+    hostname: 172.20.20.5

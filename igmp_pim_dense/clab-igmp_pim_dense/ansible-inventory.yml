@@ -12,14 +12,14 @@ all:
         ansible_password: admin
       hosts:
         clab-igmp_pim_dense-H2:
-          ansible_host: 172.20.20.3
-        clab-igmp_pim_dense-H3:
-          ansible_host: 172.20.20.2
-        clab-igmp_pim_dense-R1:
-          ansible_host: 172.20.20.4
-        clab-igmp_pim_dense-R2:
-          ansible_host: 172.20.20.5
-        clab-igmp_pim_dense-R3:
           ansible_host: 172.20.20.6
-        clab-igmp_pim_dense-S1:
+        clab-igmp_pim_dense-H3:
+          ansible_host: 172.20.20.4
+        clab-igmp_pim_dense-R1:
+          ansible_host: 172.20.20.2
+        clab-igmp_pim_dense-R2:
           ansible_host: 172.20.20.7
+        clab-igmp_pim_dense-R3:
+          ansible_host: 172.20.20.3
+        clab-igmp_pim_dense-S1:
+          ansible_host: 172.20.20.5
