@@ -12,16 +12,16 @@ all:
         ansible_password: admin
       hosts:
         clab-igmp_pimsp_iol-H3:
-          ansible_host: 172.20.20.3
+          ansible_host: 172.20.20.8
         clab-igmp_pimsp_iol-H4:
           ansible_host: 172.20.20.6
         clab-igmp_pimsp_iol-R1:
-          ansible_host: 172.20.20.5
-        clab-igmp_pimsp_iol-R2:
-          ansible_host: 172.20.20.8
-        clab-igmp_pimsp_iol-R3:
           ansible_host: 172.20.20.4
+        clab-igmp_pimsp_iol-R2:
+          ansible_host: 172.20.20.7
+        clab-igmp_pimsp_iol-R3:
+          ansible_host: 172.20.20.3
         clab-igmp_pimsp_iol-R4:
           ansible_host: 172.20.20.2
         clab-igmp_pimsp_iol-S1:
-          ansible_host: 172.20.20.7
+          ansible_host: 172.20.20.5

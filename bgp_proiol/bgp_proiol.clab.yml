@@ -1,46 +1,51 @@
 name: bgp_proiol
-
 topology:
-  kinds:
-    cisco_iol:
-      image: vrnetlab/cisco_iol:17.15.01
-
   nodes:
     ISP:
       kind: cisco_iol
+      image: vrnetlab/cisco_iol:17.16.01a  
     R1:
       kind: cisco_iol
+      image: vrnetlab/cisco_iol:17.16.01a
     R2:
       kind: cisco_iol
+      image: vrnetlab/cisco_iol:17.16.01a
     R3:
       kind: cisco_iol
+      image: vrnetlab/cisco_iol:17.16.01a
     R4:
       kind: cisco_iol
+      image: vrnetlab/cisco_iol:17.16.01a
     R5:
       kind: cisco_iol
+      image: vrnetlab/cisco_iol:17.16.01a
     R6:
       kind: cisco_iol
+      image: vrnetlab/cisco_iol:17.16.01a
     R7:
       kind: cisco_iol
+      image: vrnetlab/cisco_iol:17.16.01a
     R8:
       kind: cisco_iol
+      image: vrnetlab/cisco_iol:17.16.01a
     R9:
       kind: cisco_iol
+      image: vrnetlab/cisco_iol:17.16.01a
 
   links:
-    - endpoints: ["ISP:Ethernet1/0","R1:Ethernet1/0"]
-    - endpoints: ["R1:Ethernet1/1","R4:Ethernet1/0"]
-    - endpoints: ["R1:Ethernet1/2","R2:Ethernet1/0"]
-    - endpoints: ["R1:Ethernet1/3","R3:Ethernet1/0"]
-    - endpoints: ["R2:Ethernet1/1","R3:Ethernet1/1"]
-    - endpoints: ["R2:Ethernet1/2","R4:Ethernet1/1"]
-    - endpoints: ["R3:Ethernet1/2","R5:Ethernet1/0"]
-    - endpoints: ["R4:Ethernet1/2","R5:Ethernet1/1"]
-    - endpoints: ["R4:Ethernet1/3","R6:Ethernet1/0"]
-    - endpoints: ["R5:Ethernet1/2","R7:Ethernet1/0"]
-    - endpoints: ["R5:Ethernet1/3","R8:Ethernet1/0"]
-    - endpoints: ["R6:Ethernet1/1","R7:Ethernet1/1"]
-    - endpoints: ["R8:Ethernet1/1","R9:Ethernet1/0"]
+    - endpoints: ["ISP:e1/0","R1:e1/0"]
+    - endpoints: ["R1:e1/1","R4:e1/0"]
+    - endpoints: ["R1:e1/2","R2:e1/0"]
+    - endpoints: ["R1:e1/3","R3:e1/0"]
+    - endpoints: ["R2:e1/1","R3:e1/1"]
+    - endpoints: ["R2:e1/2","R4:e1/1"]
+    - endpoints: ["R3:e1/2","R5:e1/0"]
+    - endpoints: ["R4:e1/2","R5:e1/1"]
+    - endpoints: ["R4:e1/3","R6:e1/0"]
+    - endpoints: ["R5:e1/2","R7:e1/0"]
+    - endpoints: ["R5:e1/3","R8:e1/0"]
+    - endpoints: ["R6:e1/1","R7:e1/1"]
+    - endpoints: ["R8:e1/1","R9:e1/0"]
 
 
 
