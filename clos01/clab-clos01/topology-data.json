@@ -1,0 +1,266 @@
+{
+  "name": "clos01",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-23a85d38e506",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "client1": {
+      "index": "0",
+      "shortname": "client1",
+      "longname": "clab-clos01-client1",
+      "fqdn": "client1.clos01.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/clos01/clab-clos01/client1",
+      "kind": "linux",
+      "image": "ghcr.io/hellt/network-multitool",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-23a85d38e506",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/clos01/clab-clos01/client1",
+        "clab-node-longname": "clab-clos01-client1",
+        "clab-node-name": "client1",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/clos01/clos01.clab.yml",
+        "containerlab": "clos01"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "client2": {
+      "index": "1",
+      "shortname": "client2",
+      "longname": "clab-clos01-client2",
+      "fqdn": "client2.clos01.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/clos01/clab-clos01/client2",
+      "kind": "linux",
+      "image": "ghcr.io/hellt/network-multitool",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-23a85d38e506",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/clos01/clab-clos01/client2",
+        "clab-node-longname": "clab-clos01-client2",
+        "clab-node-name": "client2",
+        "clab-node-type": "",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/clos01/clos01.clab.yml",
+        "containerlab": "clos01"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "leaf1": {
+      "index": "2",
+      "shortname": "leaf1",
+      "longname": "clab-clos01-leaf1",
+      "fqdn": "leaf1.clos01.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/clos01/clab-clos01/leaf1",
+      "kind": "nokia_srlinux",
+      "image": "ghcr.io/nokia/srlinux",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:ee:02:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-23a85d38e506",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srlinux",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/clos01/clab-clos01/leaf1",
+        "clab-node-longname": "clab-clos01-leaf1",
+        "clab-node-name": "leaf1",
+        "clab-node-type": "ixr-d2l",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/clos01/clos01.clab.yml",
+        "containerlab": "clos01"
+      },
+      "port-bindings": [
+      ]
+    },
+    "leaf2": {
+      "index": "3",
+      "shortname": "leaf2",
+      "longname": "clab-clos01-leaf2",
+      "fqdn": "leaf2.clos01.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/clos01/clab-clos01/leaf2",
+      "kind": "nokia_srlinux",
+      "image": "ghcr.io/nokia/srlinux",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:2e:03:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-23a85d38e506",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srlinux",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/clos01/clab-clos01/leaf2",
+        "clab-node-longname": "clab-clos01-leaf2",
+        "clab-node-name": "leaf2",
+        "clab-node-type": "ixr-d2l",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/clos01/clos01.clab.yml",
+        "containerlab": "clos01"
+      },
+      "port-bindings": [
+      ]
+    },
+    "spine": {
+      "index": "4",
+      "shortname": "spine",
+      "longname": "clab-clos01-spine",
+      "fqdn": "spine.clos01.io",
+      "group": "",
+      "labdir": "/home/sysadmin/_repos/clabs/clos01/clab-clos01/spine",
+      "kind": "nokia_srlinux",
+      "image": "ghcr.io/nokia/srlinux",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:01:04:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-23a85d38e506",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srlinux",
+        "clab-node-lab-dir": "/home/sysadmin/_repos/clabs/clos01/clab-clos01/spine",
+        "clab-node-longname": "clab-clos01-spine",
+        "clab-node-name": "spine",
+        "clab-node-type": "ixr-d3l",
+        "clab-owner": "sysadmin",
+        "clab-topo-file": "/home/sysadmin/_repos/clabs/clos01/clos01.clab.yml",
+        "containerlab": "clos01"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "leaf1",
+          "interface": "e1-1",
+          "mac": "aa:c1:ab:ec:a0:38",
+          "peer": "z"
+        },
+        "z": {
+          "node": "spine",
+          "interface": "e1-1",
+          "mac": "aa:c1:ab:07:1f:79",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "leaf2",
+          "interface": "e1-1",
+          "mac": "aa:c1:ab:49:4f:ab",
+          "peer": "z"
+        },
+        "z": {
+          "node": "spine",
+          "interface": "e1-2",
+          "mac": "aa:c1:ab:0d:16:86",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "client1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:b0:0a:8b",
+          "peer": "z"
+        },
+        "z": {
+          "node": "leaf1",
+          "interface": "e1-2",
+          "mac": "aa:c1:ab:58:8d:a8",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "client2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:66:eb:41",
+          "peer": "z"
+        },
+        "z": {
+          "node": "leaf2",
+          "interface": "e1-2",
+          "mac": "aa:c1:ab:7d:c0:d6",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}
