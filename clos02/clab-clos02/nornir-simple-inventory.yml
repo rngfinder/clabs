@@ -3,32 +3,32 @@ client1:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.5
+    hostname: 172.20.20.6
 client2:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.6
+    hostname: 172.20.20.5
 client3:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.3
+    hostname: 172.20.20.8
 client4:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.7
+    hostname: 172.20.20.9
 leaf1:
     username: admin
     password: NokiaSrl1!
     platform: nokia_srlinux
-    hostname: 172.20.20.13
+    hostname: 172.20.20.12
 leaf2:
     username: admin
     password: NokiaSrl1!
     platform: nokia_srlinux
-    hostname: 172.20.20.12
+    hostname: 172.20.20.4
 leaf3:
     username: admin
     password: NokiaSrl1!
@@ -38,34 +38,34 @@ leaf4:
     username: admin
     password: NokiaSrl1!
     platform: nokia_srlinux
-    hostname: 172.20.20.10
+    hostname: 172.20.20.14
 spine1:
     username: admin
     password: NokiaSrl1!
     platform: nokia_srlinux
-    hostname: 172.20.20.4
+    hostname: 172.20.20.7
 spine2:
     username: admin
     password: NokiaSrl1!
     platform: nokia_srlinux
-    hostname: 172.20.20.8
+    hostname: 172.20.20.13
 spine3:
     username: admin
     password: NokiaSrl1!
     platform: nokia_srlinux
-    hostname: 172.20.20.14
+    hostname: 172.20.20.2
 spine4:
     username: admin
     password: NokiaSrl1!
     platform: nokia_srlinux
-    hostname: 172.20.20.11
+    hostname: 172.20.20.3
 superspine1:
     username: admin
     password: NokiaSrl1!
     platform: nokia_srlinux
-    hostname: 172.20.20.2
+    hostname: 172.20.20.10
 superspine2:
     username: admin
     password: NokiaSrl1!
     platform: nokia_srlinux
-    hostname: 172.20.20.9
+    hostname: 172.20.20.11

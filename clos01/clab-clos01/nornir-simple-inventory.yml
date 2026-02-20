@@ -13,14 +13,14 @@ leaf1:
     username: admin
     password: NokiaSrl1!
     platform: nokia_srlinux
-    hostname: 172.20.20.5
+    hostname: 172.20.20.4
 leaf2:
     username: admin
     password: NokiaSrl1!
     platform: nokia_srlinux
-    hostname: 172.20.20.6
+    hostname: 172.20.20.5
 spine:
     username: admin
     password: NokiaSrl1!
     platform: nokia_srlinux
-    hostname: 172.20.20.4
+    hostname: 172.20.20.6

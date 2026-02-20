@@ -8,13 +8,13 @@ all:
     linux:
       hosts:
         clab-clos02-client1:
-          ansible_host: 172.20.20.5
-        clab-clos02-client2:
           ansible_host: 172.20.20.6
+        clab-clos02-client2:
+          ansible_host: 172.20.20.5
         clab-clos02-client3:
-          ansible_host: 172.20.20.3
+          ansible_host: 172.20.20.8
         clab-clos02-client4:
-          ansible_host: 172.20.20.7
+          ansible_host: 172.20.20.9
     nokia_srlinux:
       vars:
         ansible_network_os: nokia.srlinux.srlinux
@@ -25,22 +25,22 @@ all:
         ansible_password: NokiaSrl1!
       hosts:
         clab-clos02-leaf1:
-          ansible_host: 172.20.20.13
-        clab-clos02-leaf2:
           ansible_host: 172.20.20.12
+        clab-clos02-leaf2:
+          ansible_host: 172.20.20.4
         clab-clos02-leaf3:
           ansible_host: 172.20.20.15
         clab-clos02-leaf4:
-          ansible_host: 172.20.20.10
-        clab-clos02-spine1:
-          ansible_host: 172.20.20.4
-        clab-clos02-spine2:
-          ansible_host: 172.20.20.8
-        clab-clos02-spine3:
           ansible_host: 172.20.20.14
-        clab-clos02-spine4:
-          ansible_host: 172.20.20.11
-        clab-clos02-superspine1:
+        clab-clos02-spine1:
+          ansible_host: 172.20.20.7
+        clab-clos02-spine2:
+          ansible_host: 172.20.20.13
+        clab-clos02-spine3:
           ansible_host: 172.20.20.2
+        clab-clos02-spine4:
+          ansible_host: 172.20.20.3
+        clab-clos02-superspine1:
+          ansible_host: 172.20.20.10
         clab-clos02-superspine2:
-          ansible_host: 172.20.20.9
+          ansible_host: 172.20.20.11

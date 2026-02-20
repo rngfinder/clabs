@@ -4,7 +4,7 @@ name: sl_clos_basic
 topology:
   kinds:
     arista_ceos:
-      image: ceos:4.34.0F
+      image: ceos:4.35.0F
     linux:
       image: alpine:latest
   nodes:

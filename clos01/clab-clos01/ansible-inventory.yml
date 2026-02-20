@@ -21,8 +21,8 @@ all:
         ansible_password: NokiaSrl1!
       hosts:
         clab-clos01-leaf1:
-          ansible_host: 172.20.20.5
-        clab-clos01-leaf2:
-          ansible_host: 172.20.20.6
-        clab-clos01-spine:
           ansible_host: 172.20.20.4
+        clab-clos01-leaf2:
+          ansible_host: 172.20.20.5
+        clab-clos01-spine:
+          ansible_host: 172.20.20.6

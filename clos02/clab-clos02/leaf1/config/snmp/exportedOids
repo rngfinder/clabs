@@ -94,7 +94,7 @@ Column   4 : sysORUpTime                         .1.3.6.1.2.1.1.9.1.4           
 # table ifTable (.1.3.6.1.2.1.2.2)
 # config file  : /opt/srlinux/snmp/scripts/if_mib.yaml
 # python-script: /opt/srlinux/snmp/scripts/if_mib.py
-# large data   : true
+# batch-loaded : true
 Index    1 : ifIndex                             .1.3.6.1.2.1.2.2.1.1                          integer32
 Column   1 : ifIndex                             .1.3.6.1.2.1.2.2.1.1                          integer32
 Column   2 : ifDescr                             .1.3.6.1.2.1.2.2.1.2                          octet string
@@ -122,6 +122,7 @@ Column  22 : ifSpecific                          .1.3.6.1.2.1.2.2.1.22          
 # table ipNetToPhysicalTable (.1.3.6.1.2.1.4.35)
 # config file  : /opt/srlinux/snmp/scripts/ip_mib.yaml
 # python-script: /opt/srlinux/snmp/scripts/ip_mib.py
+# batch-loaded : true
 Index    1 : ipNetToPhysicalIfIndex              (not-accessible)                              integer32
 Index    2 : ipNetToPhysicalNetAddressType       (not-accessible)                              integer32
 Index    3 : ipNetToPhysicalNetAddress           (not-accessible)                              octet string (binary)
@@ -155,7 +156,7 @@ Column   6 : hrStorageUsed                       .1.3.6.1.2.1.25.2.3.1.6        
 # table ifXTable (.1.3.6.1.2.1.31.1.1) - augments ifTable
 # config file  : /opt/srlinux/snmp/scripts/if_mib.yaml
 # python-script: /opt/srlinux/snmp/scripts/if_mib.py
-# large data   : true
+# batch-loaded : true
 Index    - : ifIndex                             (augmented)                                   integer32
 Column   1 : ifName                              .1.3.6.1.2.1.31.1.1.1.1                       octet string
 Column   2 : ifInMulticastPkts                   .1.3.6.1.2.1.31.1.1.1.2                       counter32
@@ -180,7 +181,6 @@ Column  19 : ifCounterDiscontinuityTime          .1.3.6.1.2.1.31.1.1.1.19       
 # table ifStackTable (.1.3.6.1.2.1.31.1.2)
 # config file  : /opt/srlinux/snmp/scripts/if_mib.yaml
 # python-script: /opt/srlinux/snmp/scripts/if_mib.py
-# large data   : true
 Index    1 : ifStackHigherLayer                  (not-accessible)                              integer32
 Index    2 : ifStackLowerLayer                   (not-accessible)                              integer32
 Column   3 : ifStackStatus                       .1.3.6.1.2.1.31.1.2.1.3                       integer32
@@ -264,7 +264,7 @@ Column  10 : tmnxPhysChassisPMFeedBInVolt        .1.3.6.1.4.1.6527.3.1.2.2.1.24.
 # table vRtrIpAddrTable (.1.3.6.1.4.1.6527.3.1.2.3.6)
 # config file  : /opt/srlinux/snmp/scripts/timetra_vrtr_mib.yaml
 # python-script: /opt/srlinux/snmp/scripts/timetra_vrtr_mib.py
-# large data   : true
+# batch-loaded : true
 Index    - : vRtrID                              (none)                                        integer32
 Index    - : vRtrIfIndex                         (none)                                        integer32
 Index    1 : vRiaIndex                           (not-accessible)                              integer32
@@ -275,7 +275,7 @@ Column  10 : vRiaInetPrefixLen                   .1.3.6.1.4.1.6527.3.1.2.3.6.1.1
 # table vRtrIfStatsTable (.1.3.6.1.4.1.6527.3.1.2.3.54)
 # config file  : /opt/srlinux/snmp/scripts/timetra_vrtr_mib.yaml
 # python-script: /opt/srlinux/snmp/scripts/timetra_vrtr_mib.py
-# large data   : true
+# batch-loaded : true
 Index    - : vRtrID                              (none)                                        integer32
 Index    - : vRtrIfIndex                         (none)                                        integer32
 Column  40 : vRtrIfRxPkts                        .1.3.6.1.4.1.6527.3.1.2.3.54.1.40             counter64
@@ -284,7 +284,7 @@ Column  43 : vRtrIfRxBytes                       .1.3.6.1.4.1.6527.3.1.2.3.54.1.
 # table vRtrIfStatsExtTable (.1.3.6.1.4.1.6527.3.1.2.3.74) - augments vRtrIfStatsTable
 # config file  : /opt/srlinux/snmp/scripts/timetra_vrtr_mib.yaml
 # python-script: /opt/srlinux/snmp/scripts/timetra_vrtr_mib.py
-# large data   : true
+# batch-loaded : true
 Index    - : vRtrID                              (augmented)                                   integer32
 Index    - : vRtrIfIndex                         (augmented)                                   integer32
 Column   1 : vRtrIfTxPkts                        .1.3.6.1.4.1.6527.3.1.2.3.74.1.1              counter64
@@ -323,6 +323,7 @@ Column  61 : tBgpPeerGroupPeerAS4Byte            .1.3.6.1.4.1.6527.3.1.2.14.3.3.
 # table tBgpPeerNgTable (.1.3.6.1.4.1.6527.3.1.2.14.4.7)
 # config file  : /opt/srlinux/snmp/scripts/timetra_bgp.yaml
 # python-script: /opt/srlinux/snmp/scripts/timetra_bgp.py
+# batch-loaded : true
 Index    1 : tBgpPeerNgInstanceIndex             (not-accessible)                              integer32
 Index    2 : tBgpPeerNgAddressType               (not-accessible)                              integer32
 Index    3 : tBgpPeerNgAddress                   (not-accessible)                              octet string (binary)
@@ -348,6 +349,7 @@ Column  74 : tBgpPeerNgCreationType              .1.3.6.1.4.1.6527.3.1.2.14.4.7.
 # table tBgpPeerNgOperTable (.1.3.6.1.4.1.6527.3.1.2.14.4.8) - augments tBgpPeerNgTable
 # config file  : /opt/srlinux/snmp/scripts/timetra_bgp.yaml
 # python-script: /opt/srlinux/snmp/scripts/timetra_bgp.py
+# batch-loaded : true
 Index    - : tBgpPeerNgInstanceIndex             (augmented)                                   integer32
 Index    - : tBgpPeerNgAddressType               (augmented)                                   integer32
 Index    - : tBgpPeerNgAddress                   (augmented)                                   octet string (binary)
@@ -368,9 +370,15 @@ Column  29 : tBgpPeerNgOperV6ActivePrefixes      .1.3.6.1.4.1.6527.3.1.2.14.4.8.
 Column  40 : tBgpPeerNgOperVpnIpv6RecvPfxs       .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.40           counter32
 Column  41 : tBgpPeerNgOperVpnIpv6SentPfxs       .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.41           counter32
 Column  42 : tBgpPeerNgOperVpnIpv6ActivePfxs     .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.42           unsigned32
+Column  45 : tBgpPeerNgOperMvpnV4RecvPfxs        .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.45           counter32
+Column  46 : tBgpPeerNgOperMvpnV4SentPfxs        .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.46           counter32
+Column  47 : tBgpPeerNgOperMvpnV4ActivePfxs      .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.47           unsigned32
 Column  71 : tBgpPeerNgOperRtTgtRecvPfxs         .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.71           counter32
 Column  72 : tBgpPeerNgOperRtTgtSentPfxs         .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.72           counter32
 Column  73 : tBgpPeerNgOperRtTgtActivePfxs       .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.73           counter32
+Column  80 : tBgpPeerNgOperMvpnV6RecvPfxs        .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.80           counter32
+Column  81 : tBgpPeerNgOperMvpnV6SentPfxs        .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.81           counter32
+Column  82 : tBgpPeerNgOperMvpnV6ActivePfxs      .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.82           unsigned32
 Column  88 : tBgpPeerNgOperEvpnRecvPfxs          .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.88           counter32
 Column  89 : tBgpPeerNgOperEvpnSentPfxs          .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.89           counter32
 Column  90 : tBgpPeerNgOperEvpnActivePfxs        .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.90           counter32
@@ -378,7 +386,9 @@ Column  98 : tBgpPeerNgOperIpv4RejPfxs           .1.3.6.1.4.1.6527.3.1.2.14.4.8.
 Column  99 : tBgpPeerNgOperVpnIpv4RejPfxs        .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.99           counter32
 Column 100 : tBgpPeerNgOperIpv6RejPfxs           .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.100          counter32
 Column 101 : tBgpPeerNgOperVpnIpv6RejPfxs        .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.101          counter32
+Column 104 : tBgpPeerNgOperMvpnV4RejPfxs         .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.104          counter32
 Column 108 : tBgpPeerNgOperRtTgtRejPfxs          .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.108          counter32
+Column 110 : tBgpPeerNgOperMvpnV6RejPfxs         .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.110          counter32
 Column 112 : tBgpPeerNgOperEvpnRejPfxs           .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.112          counter32
 Column 116 : tBgpPeerNgOperLabelV4RecvPfxs       .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.116          counter32
 Column 117 : tBgpPeerNgOperLabelV4SentPfxs       .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.117          counter32
@@ -388,6 +398,10 @@ Column 122 : tBgpPeerNgOperLabelV6RecvPfxs       .1.3.6.1.4.1.6527.3.1.2.14.4.8.
 Column 123 : tBgpPeerNgOperLabelV6SentPfxs       .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.123          counter32
 Column 124 : tBgpPeerNgOperLabelV6ActivePfxs     .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.124          counter32
 Column 125 : tBgpPeerNgOperLabelV6RejPfxs        .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.125          counter32
+Column 128 : tBgpPeerNgOperBgpLsRecvPfxs         .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.128          counter32
+Column 129 : tBgpPeerNgOperBgpLsSentPfxs         .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.129          counter32
+Column 130 : tBgpPeerNgOperBgpLsActivePfxs       .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.130          counter32
+Column 131 : tBgpPeerNgOperBgpLsRejPfxs          .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.131          counter32
 Column 143 : tBgpPeerOperSrplcyV4RecvPfxs        .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.143          counter32
 Column 144 : tBgpPeerOperSrplcyV4SentPfxs        .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.144          counter32
 Column 145 : tBgpPeerOperSrplcyV4ActivePfxs      .1.3.6.1.4.1.6527.3.1.2.14.4.8.1.145          counter32
